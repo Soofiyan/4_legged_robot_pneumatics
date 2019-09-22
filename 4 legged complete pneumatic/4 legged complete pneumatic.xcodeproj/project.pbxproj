@@ -1,0 +1,77 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXFileReference section */
+		5BF0C5E62337DE0900F1A397 /* avr_compiler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = avr_compiler.h; sourceTree = "<group>"; };
+		5BF0C5E72337DE0E00F1A397 /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		5BF0C5E82337DE2000F1A397 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		5BF0C5DF2337DDD200F1A397 = {
+			isa = PBXGroup;
+			children = (
+				5BF0C5E82337DE2000F1A397 /* main.c */,
+				5BF0C5E72337DE0E00F1A397 /* Makefile */,
+				5BF0C5E62337DE0900F1A397 /* avr_compiler.h */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		5BF0C5E02337DDD200F1A397 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 5BF0C5E32337DDD200F1A397 /* Build configuration list for PBXProject "4 legged complete pneumatic" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5BF0C5DF2337DDD200F1A397;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		5BF0C5E42337DDD200F1A397 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		5BF0C5E52337DDD200F1A397 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5BF0C5E32337DDD200F1A397 /* Build configuration list for PBXProject "4 legged complete pneumatic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BF0C5E42337DDD200F1A397 /* Debug */,
+				5BF0C5E52337DDD200F1A397 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5BF0C5E02337DDD200F1A397 /* Project object */;
+}

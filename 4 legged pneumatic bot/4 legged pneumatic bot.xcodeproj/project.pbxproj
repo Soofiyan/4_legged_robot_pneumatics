@@ -1,0 +1,76 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXFileReference section */
+		5B8AAC272205AC9C00967DD6 /* avr_compiler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = avr_compiler.h; path = "../../Files for compiling/avr_compiler.h"; sourceTree = "<group>"; };
+		5B8AAC282205ACA600967DD6 /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; name = Makefile; path = "../../Files for compiling/Makefile"; sourceTree = "<group>"; };
+		5B8AAC292205ACBD00967DD6 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		5B8AAC202205AC8300967DD6 = {
+			isa = PBXGroup;
+			children = (
+				5B8AAC292205ACBD00967DD6 /* main.c */,
+				5B8AAC282205ACA600967DD6 /* Makefile */,
+				5B8AAC272205AC9C00967DD6 /* avr_compiler.h */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		5B8AAC212205AC8300967DD6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+			};
+			buildConfigurationList = 5B8AAC242205AC8300967DD6 /* Build configuration list for PBXProject "4 legged pneumatic bot" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5B8AAC202205AC8300967DD6;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		5B8AAC252205AC8300967DD6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		5B8AAC262205AC8300967DD6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5B8AAC242205AC8300967DD6 /* Build configuration list for PBXProject "4 legged pneumatic bot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B8AAC252205AC8300967DD6 /* Debug */,
+				5B8AAC262205AC8300967DD6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5B8AAC212205AC8300967DD6 /* Project object */;
+}

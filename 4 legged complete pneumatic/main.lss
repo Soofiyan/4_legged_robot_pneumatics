@@ -1,0 +1,1890 @@
+
+main.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000028  00800200  00000c08  00000c9c  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         00000c08  00000000  00000000  00000094  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .bss          00000076  00800228  00800228  00000cc4  2**0
+                  ALLOC
+  3 .comment      00000011  00000000  00000000  00000cc4  2**0
+                  CONTENTS, READONLY
+  4 .note.gnu.avr.deviceinfo 00000040  00000000  00000000  00000cd8  2**2
+                  CONTENTS, READONLY
+  5 .debug_aranges 00000088  00000000  00000000  00000d18  2**3
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_info   000023be  00000000  00000000  00000da0  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_abbrev 00000d8d  00000000  00000000  0000315e  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_line   00001fb7  00000000  00000000  00003eeb  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_frame  000001e4  00000000  00000000  00005ea4  2**2
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_str    00000721  00000000  00000000  00006088  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_loc    000013de  00000000  00000000  000067a9  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 12 .debug_ranges 00000018  00000000  00000000  00007b87  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	0c 94 72 00 	jmp	0xe4	; 0xe4 <__ctors_end>
+   4:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+   8:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+   c:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  10:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  14:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  18:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  1c:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  20:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  24:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  28:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  2c:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  30:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  34:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  38:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  3c:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  40:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  44:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  48:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  4c:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  50:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  54:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  58:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  5c:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  60:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  64:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  68:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  6c:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  70:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  74:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  78:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  7c:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  80:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  84:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  88:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  8c:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  90:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  94:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  98:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  9c:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  a0:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  a4:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  a8:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  ac:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  b0:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  b4:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  b8:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  bc:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  c0:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  c4:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  c8:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  cc:	0c 94 4f 04 	jmp	0x89e	; 0x89e <__vector_51>
+  d0:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  d4:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  d8:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  dc:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  e0:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+
+000000e4 <__ctors_end>:
+  e4:	11 24       	eor	r1, r1
+  e6:	1f be       	out	0x3f, r1	; 63
+  e8:	cf ef       	ldi	r28, 0xFF	; 255
+  ea:	d1 e2       	ldi	r29, 0x21	; 33
+  ec:	de bf       	out	0x3e, r29	; 62
+  ee:	cd bf       	out	0x3d, r28	; 61
+  f0:	00 e0       	ldi	r16, 0x00	; 0
+  f2:	0c bf       	out	0x3c, r16	; 60
+
+000000f4 <__do_copy_data>:
+  f4:	12 e0       	ldi	r17, 0x02	; 2
+  f6:	a0 e0       	ldi	r26, 0x00	; 0
+  f8:	b2 e0       	ldi	r27, 0x02	; 2
+  fa:	e8 e0       	ldi	r30, 0x08	; 8
+  fc:	fc e0       	ldi	r31, 0x0C	; 12
+  fe:	00 e0       	ldi	r16, 0x00	; 0
+ 100:	0b bf       	out	0x3b, r16	; 59
+ 102:	02 c0       	rjmp	.+4      	; 0x108 <__do_copy_data+0x14>
+ 104:	07 90       	elpm	r0, Z+
+ 106:	0d 92       	st	X+, r0
+ 108:	a8 32       	cpi	r26, 0x28	; 40
+ 10a:	b1 07       	cpc	r27, r17
+ 10c:	d9 f7       	brne	.-10     	; 0x104 <__do_copy_data+0x10>
+
+0000010e <__do_clear_bss>:
+ 10e:	22 e0       	ldi	r18, 0x02	; 2
+ 110:	a8 e2       	ldi	r26, 0x28	; 40
+ 112:	b2 e0       	ldi	r27, 0x02	; 2
+ 114:	01 c0       	rjmp	.+2      	; 0x118 <.do_clear_bss_start>
+
+00000116 <.do_clear_bss_loop>:
+ 116:	1d 92       	st	X+, r1
+
+00000118 <.do_clear_bss_start>:
+ 118:	ae 39       	cpi	r26, 0x9E	; 158
+ 11a:	b2 07       	cpc	r27, r18
+ 11c:	e1 f7       	brne	.-8      	; 0x116 <.do_clear_bss_loop>
+ 11e:	0e 94 a0 05 	call	0xb40	; 0xb40 <main>
+ 122:	0c 94 02 06 	jmp	0xc04	; 0xc04 <_exit>
+
+00000126 <__bad_interrupt>:
+ 126:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
+
+0000012a <interrup>:
+    }
+}
+
+void interrup()
+{
+    TCCR1B=1<<WGM12 | 1<<CS10 | 1<<CS12;
+ 12a:	8d e0       	ldi	r24, 0x0D	; 13
+ 12c:	80 93 81 00 	sts	0x0081, r24	; 0x800081 <__TEXT_REGION_LENGTH__+0x700081>
+    TIMSK1= 1<<OCIE1A;
+ 130:	82 e0       	ldi	r24, 0x02	; 2
+ 132:	80 93 6f 00 	sts	0x006F, r24	; 0x80006f <__TEXT_REGION_LENGTH__+0x70006f>
+    OCR1A=720;
+ 136:	80 ed       	ldi	r24, 0xD0	; 208
+ 138:	92 e0       	ldi	r25, 0x02	; 2
+ 13a:	90 93 89 00 	sts	0x0089, r25	; 0x800089 <__TEXT_REGION_LENGTH__+0x700089>
+ 13e:	80 93 88 00 	sts	0x0088, r24	; 0x800088 <__TEXT_REGION_LENGTH__+0x700088>
+}
+ 142:	08 95       	ret
+
+00000144 <init>:
+    backJointHigh;
+    _delay_ms(150);
+}
+void init()
+{
+    leg=0xFF;
+ 144:	8f ef       	ldi	r24, 0xFF	; 255
+ 146:	80 93 04 01 	sts	0x0104, r24	; 0x800104 <__TEXT_REGION_LENGTH__+0x700104>
+    joint=0xFF;
+ 14a:	81 b9       	out	0x01, r24	; 1
+    readSwitch=0x00;
+ 14c:	1d b8       	out	0x0d, r1	; 13
+    led=0xFF;
+ 14e:	80 93 07 01 	sts	0x0107, r24	; 0x800107 <__TEXT_REGION_LENGTH__+0x700107>
+    button=0x00;
+ 152:	14 b8       	out	0x04, r1	; 4
+}
+ 154:	08 95       	ret
+
+00000156 <startPos>:
+
+void startPos()
+{
+    frontJointHigh;
+ 156:	10 9a       	sbi	0x02, 0	; 2
+    backJointLow;
+ 158:	11 98       	cbi	0x02, 1	; 2
+    frontLegHigh;
+ 15a:	e5 e0       	ldi	r30, 0x05	; 5
+ 15c:	f1 e0       	ldi	r31, 0x01	; 1
+ 15e:	80 81       	ld	r24, Z
+ 160:	82 60       	ori	r24, 0x02	; 2
+ 162:	80 83       	st	Z, r24
+    backLegHigh;
+ 164:	80 81       	ld	r24, Z
+ 166:	81 60       	ori	r24, 0x01	; 1
+ 168:	80 83       	st	Z, r24
+}
+ 16a:	08 95       	ret
+
+0000016c <foward>:
+
+void foward()
+{
+    backLegHigh;
+ 16c:	e5 e0       	ldi	r30, 0x05	; 5
+ 16e:	f1 e0       	ldi	r31, 0x01	; 1
+ 170:	80 81       	ld	r24, Z
+ 172:	81 60       	ori	r24, 0x01	; 1
+ 174:	80 83       	st	Z, r24
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+ 176:	2f ef       	ldi	r18, 0xFF	; 255
+ 178:	8f ef       	ldi	r24, 0xFF	; 255
+ 17a:	98 e0       	ldi	r25, 0x08	; 8
+ 17c:	21 50       	subi	r18, 0x01	; 1
+ 17e:	80 40       	sbci	r24, 0x00	; 0
+ 180:	90 40       	sbci	r25, 0x00	; 0
+ 182:	e1 f7       	brne	.-8      	; 0x17c <foward+0x10>
+ 184:	00 c0       	rjmp	.+0      	; 0x186 <foward+0x1a>
+ 186:	00 00       	nop
+    _delay_ms(200);
+    //while(backDown);
+    backLegLow;
+ 188:	80 81       	ld	r24, Z
+ 18a:	8e 7f       	andi	r24, 0xFE	; 254
+ 18c:	80 83       	st	Z, r24
+    frontJointHigh;
+ 18e:	10 9a       	sbi	0x02, 0	; 2
+    backJointHigh;
+ 190:	11 9a       	sbi	0x02, 1	; 2
+ 192:	2f ef       	ldi	r18, 0xFF	; 255
+ 194:	8f ef       	ldi	r24, 0xFF	; 255
+ 196:	98 e0       	ldi	r25, 0x08	; 8
+ 198:	21 50       	subi	r18, 0x01	; 1
+ 19a:	80 40       	sbci	r24, 0x00	; 0
+ 19c:	90 40       	sbci	r25, 0x00	; 0
+ 19e:	e1 f7       	brne	.-8      	; 0x198 <foward+0x2c>
+ 1a0:	00 c0       	rjmp	.+0      	; 0x1a2 <foward+0x36>
+ 1a2:	00 00       	nop
+    //while(backUp);
+    _delay_ms(200);
+    frontLegHigh;
+ 1a4:	80 81       	ld	r24, Z
+ 1a6:	82 60       	ori	r24, 0x02	; 2
+ 1a8:	80 83       	st	Z, r24
+ 1aa:	2f ef       	ldi	r18, 0xFF	; 255
+ 1ac:	8f ef       	ldi	r24, 0xFF	; 255
+ 1ae:	98 e0       	ldi	r25, 0x08	; 8
+ 1b0:	21 50       	subi	r18, 0x01	; 1
+ 1b2:	80 40       	sbci	r24, 0x00	; 0
+ 1b4:	90 40       	sbci	r25, 0x00	; 0
+ 1b6:	e1 f7       	brne	.-8      	; 0x1b0 <foward+0x44>
+ 1b8:	00 c0       	rjmp	.+0      	; 0x1ba <foward+0x4e>
+ 1ba:	00 00       	nop
+    _delay_ms(200);
+    //while(frontDown);
+    frontLegLow;
+ 1bc:	80 81       	ld	r24, Z
+ 1be:	8d 7f       	andi	r24, 0xFD	; 253
+ 1c0:	80 83       	st	Z, r24
+    frontJointLow;
+ 1c2:	10 98       	cbi	0x02, 0	; 2
+    backJointLow;
+ 1c4:	11 98       	cbi	0x02, 1	; 2
+ 1c6:	2f ef       	ldi	r18, 0xFF	; 255
+ 1c8:	8f ef       	ldi	r24, 0xFF	; 255
+ 1ca:	98 e0       	ldi	r25, 0x08	; 8
+ 1cc:	21 50       	subi	r18, 0x01	; 1
+ 1ce:	80 40       	sbci	r24, 0x00	; 0
+ 1d0:	90 40       	sbci	r25, 0x00	; 0
+ 1d2:	e1 f7       	brne	.-8      	; 0x1cc <foward+0x60>
+ 1d4:	00 c0       	rjmp	.+0      	; 0x1d6 <foward+0x6a>
+ 1d6:	00 00       	nop
+    _delay_ms(200);
+    //while(frontUp);
+}
+ 1d8:	08 95       	ret
+
+000001da <hop>:
+//     frontLegHigh;
+//     while(frontDown || backDown);
+//     backLegLow;
+//     frontLegLow;
+//     while(frontUp || backUp);
+PORTJ = 0x00;
+ 1da:	e5 e0       	ldi	r30, 0x05	; 5
+ 1dc:	f1 e0       	ldi	r31, 0x01	; 1
+ 1de:	10 82       	st	Z, r1
+ 1e0:	2f ef       	ldi	r18, 0xFF	; 255
+ 1e2:	8f ef       	ldi	r24, 0xFF	; 255
+ 1e4:	98 e0       	ldi	r25, 0x08	; 8
+ 1e6:	21 50       	subi	r18, 0x01	; 1
+ 1e8:	80 40       	sbci	r24, 0x00	; 0
+ 1ea:	90 40       	sbci	r25, 0x00	; 0
+ 1ec:	e1 f7       	brne	.-8      	; 0x1e6 <hop+0xc>
+ 1ee:	00 c0       	rjmp	.+0      	; 0x1f0 <hop+0x16>
+ 1f0:	00 00       	nop
+_delay_ms(200);
+PORTJ = 0xFF;
+ 1f2:	8f ef       	ldi	r24, 0xFF	; 255
+ 1f4:	80 83       	st	Z, r24
+ 1f6:	2f ef       	ldi	r18, 0xFF	; 255
+ 1f8:	8f ef       	ldi	r24, 0xFF	; 255
+ 1fa:	98 e0       	ldi	r25, 0x08	; 8
+ 1fc:	21 50       	subi	r18, 0x01	; 1
+ 1fe:	80 40       	sbci	r24, 0x00	; 0
+ 200:	90 40       	sbci	r25, 0x00	; 0
+ 202:	e1 f7       	brne	.-8      	; 0x1fc <hop+0x22>
+ 204:	00 c0       	rjmp	.+0      	; 0x206 <hop+0x2c>
+ 206:	00 00       	nop
+_delay_ms(200);
+}
+ 208:	08 95       	ret
+
+0000020a <pronking>:
+    frontJointHigh;
+ 20a:	10 9a       	sbi	0x02, 0	; 2
+    backJointLow;
+ 20c:	11 98       	cbi	0x02, 1	; 2
+ 20e:	29 e9       	ldi	r18, 0x99	; 153
+ 210:	89 e9       	ldi	r24, 0x99	; 153
+ 212:	93 e0       	ldi	r25, 0x03	; 3
+ 214:	21 50       	subi	r18, 0x01	; 1
+ 216:	80 40       	sbci	r24, 0x00	; 0
+ 218:	90 40       	sbci	r25, 0x00	; 0
+ 21a:	e1 f7       	brne	.-8      	; 0x214 <pronking+0xa>
+ 21c:	00 00       	nop
+    hop();
+ 21e:	0e 94 ed 00 	call	0x1da	; 0x1da <hop>
+    frontJointLow;
+ 222:	10 98       	cbi	0x02, 0	; 2
+    backJointHigh;
+ 224:	11 9a       	sbi	0x02, 1	; 2
+ 226:	2f ef       	ldi	r18, 0xFF	; 255
+ 228:	8f eb       	ldi	r24, 0xBF	; 191
+ 22a:	96 e0       	ldi	r25, 0x06	; 6
+ 22c:	21 50       	subi	r18, 0x01	; 1
+ 22e:	80 40       	sbci	r24, 0x00	; 0
+ 230:	90 40       	sbci	r25, 0x00	; 0
+ 232:	e1 f7       	brne	.-8      	; 0x22c <pronking+0x22>
+ 234:	00 c0       	rjmp	.+0      	; 0x236 <pronking+0x2c>
+ 236:	00 00       	nop
+}
+ 238:	08 95       	ret
+
+0000023a <borseGait1>:
+
+void borseGait1()
+{
+    frontLegLow;
+ 23a:	e5 e0       	ldi	r30, 0x05	; 5
+ 23c:	f1 e0       	ldi	r31, 0x01	; 1
+ 23e:	80 81       	ld	r24, Z
+ 240:	8d 7f       	andi	r24, 0xFD	; 253
+ 242:	80 83       	st	Z, r24
+ 244:	2f ef       	ldi	r18, 0xFF	; 255
+ 246:	8f e1       	ldi	r24, 0x1F	; 31
+ 248:	91 e0       	ldi	r25, 0x01	; 1
+ 24a:	21 50       	subi	r18, 0x01	; 1
+ 24c:	80 40       	sbci	r24, 0x00	; 0
+ 24e:	90 40       	sbci	r25, 0x00	; 0
+ 250:	e1 f7       	brne	.-8      	; 0x24a <borseGait1+0x10>
+ 252:	00 c0       	rjmp	.+0      	; 0x254 <borseGait1+0x1a>
+ 254:	00 00       	nop
+    _delay_ms(25);
+    backLegLow;
+ 256:	80 81       	ld	r24, Z
+ 258:	8e 7f       	andi	r24, 0xFE	; 254
+ 25a:	80 83       	st	Z, r24
+ 25c:	29 e9       	ldi	r18, 0x99	; 153
+ 25e:	89 eb       	ldi	r24, 0xB9	; 185
+ 260:	94 e0       	ldi	r25, 0x04	; 4
+ 262:	21 50       	subi	r18, 0x01	; 1
+ 264:	80 40       	sbci	r24, 0x00	; 0
+ 266:	90 40       	sbci	r25, 0x00	; 0
+ 268:	e1 f7       	brne	.-8      	; 0x262 <borseGait1+0x28>
+ 26a:	00 00       	nop
+    _delay_ms(105);
+    frontLegHigh;
+ 26c:	80 81       	ld	r24, Z
+ 26e:	82 60       	ori	r24, 0x02	; 2
+ 270:	80 83       	st	Z, r24
+ 272:	2f ef       	ldi	r18, 0xFF	; 255
+ 274:	8f e1       	ldi	r24, 0x1F	; 31
+ 276:	91 e0       	ldi	r25, 0x01	; 1
+ 278:	21 50       	subi	r18, 0x01	; 1
+ 27a:	80 40       	sbci	r24, 0x00	; 0
+ 27c:	90 40       	sbci	r25, 0x00	; 0
+ 27e:	e1 f7       	brne	.-8      	; 0x278 <borseGait1+0x3e>
+ 280:	00 c0       	rjmp	.+0      	; 0x282 <borseGait1+0x48>
+ 282:	00 00       	nop
+    _delay_ms(25);
+    backLegHigh;
+ 284:	80 81       	ld	r24, Z
+ 286:	81 60       	ori	r24, 0x01	; 1
+ 288:	80 83       	st	Z, r24
+ 28a:	29 e9       	ldi	r18, 0x99	; 153
+ 28c:	89 eb       	ldi	r24, 0xB9	; 185
+ 28e:	94 e0       	ldi	r25, 0x04	; 4
+ 290:	21 50       	subi	r18, 0x01	; 1
+ 292:	80 40       	sbci	r24, 0x00	; 0
+ 294:	90 40       	sbci	r25, 0x00	; 0
+ 296:	e1 f7       	brne	.-8      	; 0x290 <borseGait1+0x56>
+ 298:	00 00       	nop
+    _delay_ms(105);
+}
+ 29a:	08 95       	ret
+
+0000029c <borseGait2>:
+void borseGait2()
+{
+    backLegLow;
+ 29c:	e5 e0       	ldi	r30, 0x05	; 5
+ 29e:	f1 e0       	ldi	r31, 0x01	; 1
+ 2a0:	80 81       	ld	r24, Z
+ 2a2:	8e 7f       	andi	r24, 0xFE	; 254
+ 2a4:	80 83       	st	Z, r24
+ 2a6:	2f ef       	ldi	r18, 0xFF	; 255
+ 2a8:	8f e1       	ldi	r24, 0x1F	; 31
+ 2aa:	91 e0       	ldi	r25, 0x01	; 1
+ 2ac:	21 50       	subi	r18, 0x01	; 1
+ 2ae:	80 40       	sbci	r24, 0x00	; 0
+ 2b0:	90 40       	sbci	r25, 0x00	; 0
+ 2b2:	e1 f7       	brne	.-8      	; 0x2ac <borseGait2+0x10>
+ 2b4:	00 c0       	rjmp	.+0      	; 0x2b6 <borseGait2+0x1a>
+ 2b6:	00 00       	nop
+    _delay_ms(25);
+    frontLegLow;
+ 2b8:	80 81       	ld	r24, Z
+ 2ba:	8d 7f       	andi	r24, 0xFD	; 253
+ 2bc:	80 83       	st	Z, r24
+ 2be:	29 e9       	ldi	r18, 0x99	; 153
+ 2c0:	89 eb       	ldi	r24, 0xB9	; 185
+ 2c2:	94 e0       	ldi	r25, 0x04	; 4
+ 2c4:	21 50       	subi	r18, 0x01	; 1
+ 2c6:	80 40       	sbci	r24, 0x00	; 0
+ 2c8:	90 40       	sbci	r25, 0x00	; 0
+ 2ca:	e1 f7       	brne	.-8      	; 0x2c4 <borseGait2+0x28>
+ 2cc:	00 00       	nop
+    _delay_ms(105);
+    backLegHigh;
+ 2ce:	80 81       	ld	r24, Z
+ 2d0:	81 60       	ori	r24, 0x01	; 1
+ 2d2:	80 83       	st	Z, r24
+ 2d4:	2f ef       	ldi	r18, 0xFF	; 255
+ 2d6:	8f e1       	ldi	r24, 0x1F	; 31
+ 2d8:	91 e0       	ldi	r25, 0x01	; 1
+ 2da:	21 50       	subi	r18, 0x01	; 1
+ 2dc:	80 40       	sbci	r24, 0x00	; 0
+ 2de:	90 40       	sbci	r25, 0x00	; 0
+ 2e0:	e1 f7       	brne	.-8      	; 0x2da <borseGait2+0x3e>
+ 2e2:	00 c0       	rjmp	.+0      	; 0x2e4 <borseGait2+0x48>
+ 2e4:	00 00       	nop
+    _delay_ms(25);
+    frontLegHigh;
+ 2e6:	80 81       	ld	r24, Z
+ 2e8:	82 60       	ori	r24, 0x02	; 2
+ 2ea:	80 83       	st	Z, r24
+ 2ec:	29 e9       	ldi	r18, 0x99	; 153
+ 2ee:	89 eb       	ldi	r24, 0xB9	; 185
+ 2f0:	94 e0       	ldi	r25, 0x04	; 4
+ 2f2:	21 50       	subi	r18, 0x01	; 1
+ 2f4:	80 40       	sbci	r24, 0x00	; 0
+ 2f6:	90 40       	sbci	r25, 0x00	; 0
+ 2f8:	e1 f7       	brne	.-8      	; 0x2f2 <borseGait2+0x56>
+ 2fa:	00 00       	nop
+    _delay_ms(105);
+}
+ 2fc:	08 95       	ret
+
+000002fe <nw_gait>:
+void nw_gait()
+{
+    backJointHigh;
+ 2fe:	11 9a       	sbi	0x02, 1	; 2
+    frontJointLow;
+ 300:	10 98       	cbi	0x02, 0	; 2
+ 302:	2f ef       	ldi	r18, 0xFF	; 255
+ 304:	8f ef       	ldi	r24, 0xFF	; 255
+ 306:	98 e0       	ldi	r25, 0x08	; 8
+ 308:	21 50       	subi	r18, 0x01	; 1
+ 30a:	80 40       	sbci	r24, 0x00	; 0
+ 30c:	90 40       	sbci	r25, 0x00	; 0
+ 30e:	e1 f7       	brne	.-8      	; 0x308 <nw_gait+0xa>
+ 310:	00 c0       	rjmp	.+0      	; 0x312 <nw_gait+0x14>
+ 312:	00 00       	nop
+    _delay_ms(200);
+    backLegLow;
+ 314:	e5 e0       	ldi	r30, 0x05	; 5
+ 316:	f1 e0       	ldi	r31, 0x01	; 1
+ 318:	80 81       	ld	r24, Z
+ 31a:	8e 7f       	andi	r24, 0xFE	; 254
+ 31c:	80 83       	st	Z, r24
+    frontLegLow;
+ 31e:	80 81       	ld	r24, Z
+ 320:	8d 7f       	andi	r24, 0xFD	; 253
+ 322:	80 83       	st	Z, r24
+ 324:	2f ef       	ldi	r18, 0xFF	; 255
+ 326:	8f eb       	ldi	r24, 0xBF	; 191
+ 328:	96 e0       	ldi	r25, 0x06	; 6
+ 32a:	21 50       	subi	r18, 0x01	; 1
+ 32c:	80 40       	sbci	r24, 0x00	; 0
+ 32e:	90 40       	sbci	r25, 0x00	; 0
+ 330:	e1 f7       	brne	.-8      	; 0x32a <nw_gait+0x2c>
+ 332:	00 c0       	rjmp	.+0      	; 0x334 <nw_gait+0x36>
+ 334:	00 00       	nop
+    _delay_ms(150);
+    backLegHigh;
+ 336:	80 81       	ld	r24, Z
+ 338:	81 60       	ori	r24, 0x01	; 1
+ 33a:	80 83       	st	Z, r24
+    frontLegHigh;
+ 33c:	80 81       	ld	r24, Z
+ 33e:	82 60       	ori	r24, 0x02	; 2
+ 340:	80 83       	st	Z, r24
+ 342:	2f ef       	ldi	r18, 0xFF	; 255
+ 344:	8f e5       	ldi	r24, 0x5F	; 95
+ 346:	93 e0       	ldi	r25, 0x03	; 3
+ 348:	21 50       	subi	r18, 0x01	; 1
+ 34a:	80 40       	sbci	r24, 0x00	; 0
+ 34c:	90 40       	sbci	r25, 0x00	; 0
+ 34e:	e1 f7       	brne	.-8      	; 0x348 <nw_gait+0x4a>
+ 350:	00 c0       	rjmp	.+0      	; 0x352 <nw_gait+0x54>
+ 352:	00 00       	nop
+    _delay_ms(75);
+    backJointLow;
+ 354:	11 98       	cbi	0x02, 1	; 2
+    frontJointHigh;
+ 356:	10 9a       	sbi	0x02, 0	; 2
+ 358:	2f ef       	ldi	r18, 0xFF	; 255
+ 35a:	8f ef       	ldi	r24, 0xFF	; 255
+ 35c:	98 e0       	ldi	r25, 0x08	; 8
+ 35e:	21 50       	subi	r18, 0x01	; 1
+ 360:	80 40       	sbci	r24, 0x00	; 0
+ 362:	90 40       	sbci	r25, 0x00	; 0
+ 364:	e1 f7       	brne	.-8      	; 0x35e <nw_gait+0x60>
+ 366:	00 c0       	rjmp	.+0      	; 0x368 <nw_gait+0x6a>
+ 368:	00 00       	nop
+    _delay_ms(200);
+}
+ 36a:	08 95       	ret
+
+0000036c <jump1>:
+
+void jump1()
+{
+    frontLegLow;
+ 36c:	e5 e0       	ldi	r30, 0x05	; 5
+ 36e:	f1 e0       	ldi	r31, 0x01	; 1
+ 370:	80 81       	ld	r24, Z
+ 372:	8d 7f       	andi	r24, 0xFD	; 253
+ 374:	80 83       	st	Z, r24
+ 376:	2f ef       	ldi	r18, 0xFF	; 255
+ 378:	8f e1       	ldi	r24, 0x1F	; 31
+ 37a:	91 e0       	ldi	r25, 0x01	; 1
+ 37c:	21 50       	subi	r18, 0x01	; 1
+ 37e:	80 40       	sbci	r24, 0x00	; 0
+ 380:	90 40       	sbci	r25, 0x00	; 0
+ 382:	e1 f7       	brne	.-8      	; 0x37c <jump1+0x10>
+ 384:	00 c0       	rjmp	.+0      	; 0x386 <jump1+0x1a>
+ 386:	00 00       	nop
+    _delay_ms(25);
+    backLegLow;
+ 388:	80 81       	ld	r24, Z
+ 38a:	8e 7f       	andi	r24, 0xFE	; 254
+ 38c:	80 83       	st	Z, r24
+ 38e:	2f ef       	ldi	r18, 0xFF	; 255
+ 390:	8f ed       	ldi	r24, 0xDF	; 223
+ 392:	97 e0       	ldi	r25, 0x07	; 7
+ 394:	21 50       	subi	r18, 0x01	; 1
+ 396:	80 40       	sbci	r24, 0x00	; 0
+ 398:	90 40       	sbci	r25, 0x00	; 0
+ 39a:	e1 f7       	brne	.-8      	; 0x394 <jump1+0x28>
+ 39c:	00 c0       	rjmp	.+0      	; 0x39e <jump1+0x32>
+ 39e:	00 00       	nop
+    _delay_ms(175);
+    frontLegHigh;
+ 3a0:	80 81       	ld	r24, Z
+ 3a2:	82 60       	ori	r24, 0x02	; 2
+ 3a4:	80 83       	st	Z, r24
+ 3a6:	2f ef       	ldi	r18, 0xFF	; 255
+ 3a8:	8f e1       	ldi	r24, 0x1F	; 31
+ 3aa:	91 e0       	ldi	r25, 0x01	; 1
+ 3ac:	21 50       	subi	r18, 0x01	; 1
+ 3ae:	80 40       	sbci	r24, 0x00	; 0
+ 3b0:	90 40       	sbci	r25, 0x00	; 0
+ 3b2:	e1 f7       	brne	.-8      	; 0x3ac <jump1+0x40>
+ 3b4:	00 c0       	rjmp	.+0      	; 0x3b6 <jump1+0x4a>
+ 3b6:	00 00       	nop
+    _delay_ms(25);
+    backLegHigh;
+ 3b8:	80 81       	ld	r24, Z
+ 3ba:	81 60       	ori	r24, 0x01	; 1
+ 3bc:	80 83       	st	Z, r24
+ 3be:	2f ef       	ldi	r18, 0xFF	; 255
+ 3c0:	8f eb       	ldi	r24, 0xBF	; 191
+ 3c2:	96 e0       	ldi	r25, 0x06	; 6
+ 3c4:	21 50       	subi	r18, 0x01	; 1
+ 3c6:	80 40       	sbci	r24, 0x00	; 0
+ 3c8:	90 40       	sbci	r25, 0x00	; 0
+ 3ca:	e1 f7       	brne	.-8      	; 0x3c4 <jump1+0x58>
+ 3cc:	00 c0       	rjmp	.+0      	; 0x3ce <jump1+0x62>
+ 3ce:	00 00       	nop
+    _delay_ms(150);
+    backLegLow;
+ 3d0:	80 81       	ld	r24, Z
+ 3d2:	8e 7f       	andi	r24, 0xFE	; 254
+ 3d4:	80 83       	st	Z, r24
+ 3d6:	29 e9       	ldi	r18, 0x99	; 153
+ 3d8:	89 e9       	ldi	r24, 0x99	; 153
+ 3da:	93 e0       	ldi	r25, 0x03	; 3
+ 3dc:	21 50       	subi	r18, 0x01	; 1
+ 3de:	80 40       	sbci	r24, 0x00	; 0
+ 3e0:	90 40       	sbci	r25, 0x00	; 0
+ 3e2:	e1 f7       	brne	.-8      	; 0x3dc <jump1+0x70>
+ 3e4:	00 00       	nop
+    _delay_ms(80);
+    frontJointLow;
+ 3e6:	10 98       	cbi	0x02, 0	; 2
+    ju1=0;
+ 3e8:	10 92 37 02 	sts	0x0237, r1	; 0x800237 <ju1+0x1>
+ 3ec:	10 92 36 02 	sts	0x0236, r1	; 0x800236 <ju1>
+//     _delay_ms(150);
+//     backLegLow;
+//     _delay_ms(60);
+//     frontJointLow;
+//     ju1=0;
+}
+ 3f0:	08 95       	ret
+
+000003f2 <sandDuneup>:
+
+void sandDuneup()
+{
+    frontJointHigh;
+ 3f2:	10 9a       	sbi	0x02, 0	; 2
+ 3f4:	2f ef       	ldi	r18, 0xFF	; 255
+ 3f6:	8f ef       	ldi	r24, 0xFF	; 255
+ 3f8:	98 e0       	ldi	r25, 0x08	; 8
+ 3fa:	21 50       	subi	r18, 0x01	; 1
+ 3fc:	80 40       	sbci	r24, 0x00	; 0
+ 3fe:	90 40       	sbci	r25, 0x00	; 0
+ 400:	e1 f7       	brne	.-8      	; 0x3fa <sandDuneup+0x8>
+ 402:	00 c0       	rjmp	.+0      	; 0x404 <__FUSE_REGION_LENGTH__+0x4>
+ 404:	00 00       	nop
+    _delay_ms(200);
+    frontLegLow;
+ 406:	e5 e0       	ldi	r30, 0x05	; 5
+ 408:	f1 e0       	ldi	r31, 0x01	; 1
+ 40a:	80 81       	ld	r24, Z
+ 40c:	8d 7f       	andi	r24, 0xFD	; 253
+ 40e:	80 83       	st	Z, r24
+    backLegHigh;
+ 410:	80 81       	ld	r24, Z
+ 412:	81 60       	ori	r24, 0x01	; 1
+ 414:	80 83       	st	Z, r24
+ 416:	2f ef       	ldi	r18, 0xFF	; 255
+ 418:	8f e3       	ldi	r24, 0x3F	; 63
+ 41a:	92 e0       	ldi	r25, 0x02	; 2
+ 41c:	21 50       	subi	r18, 0x01	; 1
+ 41e:	80 40       	sbci	r24, 0x00	; 0
+ 420:	90 40       	sbci	r25, 0x00	; 0
+ 422:	e1 f7       	brne	.-8      	; 0x41c <__FUSE_REGION_LENGTH__+0x1c>
+ 424:	00 c0       	rjmp	.+0      	; 0x426 <__FUSE_REGION_LENGTH__+0x26>
+ 426:	00 00       	nop
+    _delay_ms(50);
+    frontLegHigh;
+ 428:	80 81       	ld	r24, Z
+ 42a:	82 60       	ori	r24, 0x02	; 2
+ 42c:	80 83       	st	Z, r24
+    backLegLow;
+ 42e:	80 81       	ld	r24, Z
+ 430:	8e 7f       	andi	r24, 0xFE	; 254
+ 432:	80 83       	st	Z, r24
+ 434:	2f ef       	ldi	r18, 0xFF	; 255
+ 436:	8f e3       	ldi	r24, 0x3F	; 63
+ 438:	92 e0       	ldi	r25, 0x02	; 2
+ 43a:	21 50       	subi	r18, 0x01	; 1
+ 43c:	80 40       	sbci	r24, 0x00	; 0
+ 43e:	90 40       	sbci	r25, 0x00	; 0
+ 440:	e1 f7       	brne	.-8      	; 0x43a <__FUSE_REGION_LENGTH__+0x3a>
+ 442:	00 c0       	rjmp	.+0      	; 0x444 <__FUSE_REGION_LENGTH__+0x44>
+ 444:	00 00       	nop
+    _delay_ms(50);
+}
+ 446:	08 95       	ret
+
+00000448 <sandStart>:
+
+void sandStart()
+{
+    backLegHigh;
+ 448:	e5 e0       	ldi	r30, 0x05	; 5
+ 44a:	f1 e0       	ldi	r31, 0x01	; 1
+ 44c:	80 81       	ld	r24, Z
+ 44e:	81 60       	ori	r24, 0x01	; 1
+ 450:	80 83       	st	Z, r24
+    frontLegLow;
+ 452:	80 81       	ld	r24, Z
+ 454:	8d 7f       	andi	r24, 0xFD	; 253
+ 456:	80 83       	st	Z, r24
+    backJointLow;
+ 458:	11 98       	cbi	0x02, 1	; 2
+    frontJointHigh;
+ 45a:	10 9a       	sbi	0x02, 0	; 2
+}
+ 45c:	08 95       	ret
+
+0000045e <opjump1>:
+
+void opjump1()
+{
+    frontLegLow;
+ 45e:	e5 e0       	ldi	r30, 0x05	; 5
+ 460:	f1 e0       	ldi	r31, 0x01	; 1
+ 462:	80 81       	ld	r24, Z
+ 464:	8d 7f       	andi	r24, 0xFD	; 253
+ 466:	80 83       	st	Z, r24
+ 468:	2f ef       	ldi	r18, 0xFF	; 255
+ 46a:	8f e3       	ldi	r24, 0x3F	; 63
+ 46c:	92 e0       	ldi	r25, 0x02	; 2
+ 46e:	21 50       	subi	r18, 0x01	; 1
+ 470:	80 40       	sbci	r24, 0x00	; 0
+ 472:	90 40       	sbci	r25, 0x00	; 0
+ 474:	e1 f7       	brne	.-8      	; 0x46e <opjump1+0x10>
+ 476:	00 c0       	rjmp	.+0      	; 0x478 <opjump1+0x1a>
+ 478:	00 00       	nop
+    _delay_ms(50);
+    backLegLow;
+ 47a:	80 81       	ld	r24, Z
+ 47c:	8e 7f       	andi	r24, 0xFE	; 254
+ 47e:	80 83       	st	Z, r24
+ 480:	2f ef       	ldi	r18, 0xFF	; 255
+ 482:	8f eb       	ldi	r24, 0xBF	; 191
+ 484:	96 e0       	ldi	r25, 0x06	; 6
+ 486:	21 50       	subi	r18, 0x01	; 1
+ 488:	80 40       	sbci	r24, 0x00	; 0
+ 48a:	90 40       	sbci	r25, 0x00	; 0
+ 48c:	e1 f7       	brne	.-8      	; 0x486 <opjump1+0x28>
+ 48e:	00 c0       	rjmp	.+0      	; 0x490 <opjump1+0x32>
+ 490:	00 00       	nop
+    _delay_ms(150);
+    frontLegHigh;
+ 492:	80 81       	ld	r24, Z
+ 494:	82 60       	ori	r24, 0x02	; 2
+ 496:	80 83       	st	Z, r24
+ 498:	2f ef       	ldi	r18, 0xFF	; 255
+ 49a:	8f e3       	ldi	r24, 0x3F	; 63
+ 49c:	92 e0       	ldi	r25, 0x02	; 2
+ 49e:	21 50       	subi	r18, 0x01	; 1
+ 4a0:	80 40       	sbci	r24, 0x00	; 0
+ 4a2:	90 40       	sbci	r25, 0x00	; 0
+ 4a4:	e1 f7       	brne	.-8      	; 0x49e <opjump1+0x40>
+ 4a6:	00 c0       	rjmp	.+0      	; 0x4a8 <opjump1+0x4a>
+ 4a8:	00 00       	nop
+    _delay_ms(50);
+    backLegHigh;
+ 4aa:	80 81       	ld	r24, Z
+ 4ac:	81 60       	ori	r24, 0x01	; 1
+ 4ae:	80 83       	st	Z, r24
+ 4b0:	2f ef       	ldi	r18, 0xFF	; 255
+ 4b2:	8f eb       	ldi	r24, 0xBF	; 191
+ 4b4:	96 e0       	ldi	r25, 0x06	; 6
+ 4b6:	21 50       	subi	r18, 0x01	; 1
+ 4b8:	80 40       	sbci	r24, 0x00	; 0
+ 4ba:	90 40       	sbci	r25, 0x00	; 0
+ 4bc:	e1 f7       	brne	.-8      	; 0x4b6 <opjump1+0x58>
+ 4be:	00 c0       	rjmp	.+0      	; 0x4c0 <opjump1+0x62>
+ 4c0:	00 00       	nop
+    _delay_ms(150);
+    frontLegLow;
+ 4c2:	80 81       	ld	r24, Z
+ 4c4:	8d 7f       	andi	r24, 0xFD	; 253
+ 4c6:	80 83       	st	Z, r24
+ 4c8:	22 e3       	ldi	r18, 0x32	; 50
+ 4ca:	83 eb       	ldi	r24, 0xB3	; 179
+ 4cc:	92 e0       	ldi	r25, 0x02	; 2
+ 4ce:	21 50       	subi	r18, 0x01	; 1
+ 4d0:	80 40       	sbci	r24, 0x00	; 0
+ 4d2:	90 40       	sbci	r25, 0x00	; 0
+ 4d4:	e1 f7       	brne	.-8      	; 0x4ce <opjump1+0x70>
+ 4d6:	00 c0       	rjmp	.+0      	; 0x4d8 <opjump1+0x7a>
+ 4d8:	00 c0       	rjmp	.+0      	; 0x4da <opjump1+0x7c>
+    _delay_ms(60);
+    backJointHigh;
+ 4da:	11 9a       	sbi	0x02, 1	; 2
+    backLegLow;
+ 4dc:	80 81       	ld	r24, Z
+ 4de:	8e 7f       	andi	r24, 0xFE	; 254
+ 4e0:	80 83       	st	Z, r24
+ 4e2:	2c ec       	ldi	r18, 0xCC	; 204
+ 4e4:	8c ec       	ldi	r24, 0xCC	; 204
+ 4e6:	91 e0       	ldi	r25, 0x01	; 1
+ 4e8:	21 50       	subi	r18, 0x01	; 1
+ 4ea:	80 40       	sbci	r24, 0x00	; 0
+ 4ec:	90 40       	sbci	r25, 0x00	; 0
+ 4ee:	e1 f7       	brne	.-8      	; 0x4e8 <opjump1+0x8a>
+ 4f0:	00 c0       	rjmp	.+0      	; 0x4f2 <opjump1+0x94>
+    _delay_ms(40);
+    backLegHigh;
+ 4f2:	80 81       	ld	r24, Z
+ 4f4:	81 60       	ori	r24, 0x01	; 1
+ 4f6:	80 83       	st	Z, r24
+    opj1=0;
+ 4f8:	10 92 2f 02 	sts	0x022F, r1	; 0x80022f <opj1+0x1>
+ 4fc:	10 92 2e 02 	sts	0x022E, r1	; 0x80022e <opj1>
+    //_delay_ms(200);
+    
+}
+ 500:	08 95       	ret
+
+00000502 <sandDunedown>:
+
+void sandDunedown()
+{
+    //frontLegHigh;
+    backLegLow;
+ 502:	e5 e0       	ldi	r30, 0x05	; 5
+ 504:	f1 e0       	ldi	r31, 0x01	; 1
+ 506:	80 81       	ld	r24, Z
+ 508:	8e 7f       	andi	r24, 0xFE	; 254
+ 50a:	80 83       	st	Z, r24
+ 50c:	2f ef       	ldi	r18, 0xFF	; 255
+ 50e:	8f eb       	ldi	r24, 0xBF	; 191
+ 510:	96 e0       	ldi	r25, 0x06	; 6
+ 512:	21 50       	subi	r18, 0x01	; 1
+ 514:	80 40       	sbci	r24, 0x00	; 0
+ 516:	90 40       	sbci	r25, 0x00	; 0
+ 518:	e1 f7       	brne	.-8      	; 0x512 <sandDunedown+0x10>
+ 51a:	00 c0       	rjmp	.+0      	; 0x51c <sandDunedown+0x1a>
+ 51c:	00 00       	nop
+    //_delay_ms(30);
+    //frontLegLow;
+    _delay_ms(150);
+    backLegHigh;
+ 51e:	80 81       	ld	r24, Z
+ 520:	81 60       	ori	r24, 0x01	; 1
+ 522:	80 83       	st	Z, r24
+ 524:	2f ef       	ldi	r18, 0xFF	; 255
+ 526:	8f eb       	ldi	r24, 0xBF	; 191
+ 528:	96 e0       	ldi	r25, 0x06	; 6
+ 52a:	21 50       	subi	r18, 0x01	; 1
+ 52c:	80 40       	sbci	r24, 0x00	; 0
+ 52e:	90 40       	sbci	r25, 0x00	; 0
+ 530:	e1 f7       	brne	.-8      	; 0x52a <sandDunedown+0x28>
+ 532:	00 c0       	rjmp	.+0      	; 0x534 <sandDunedown+0x32>
+ 534:	00 00       	nop
+    _delay_ms(150);
+}
+ 536:	08 95       	ret
+
+00000538 <jump2>:
+
+void jump2()
+{
+    backLegLow;
+ 538:	e5 e0       	ldi	r30, 0x05	; 5
+ 53a:	f1 e0       	ldi	r31, 0x01	; 1
+ 53c:	80 81       	ld	r24, Z
+ 53e:	8e 7f       	andi	r24, 0xFE	; 254
+ 540:	80 83       	st	Z, r24
+ 542:	29 e9       	ldi	r18, 0x99	; 153
+ 544:	89 e1       	ldi	r24, 0x19	; 25
+ 546:	98 e0       	ldi	r25, 0x08	; 8
+ 548:	21 50       	subi	r18, 0x01	; 1
+ 54a:	80 40       	sbci	r24, 0x00	; 0
+ 54c:	90 40       	sbci	r25, 0x00	; 0
+ 54e:	e1 f7       	brne	.-8      	; 0x548 <jump2+0x10>
+ 550:	00 00       	nop
+    _delay_ms(180);
+    backLegHigh;
+ 552:	80 81       	ld	r24, Z
+ 554:	81 60       	ori	r24, 0x01	; 1
+ 556:	80 83       	st	Z, r24
+    frontLegLow;
+ 558:	80 81       	ld	r24, Z
+ 55a:	8d 7f       	andi	r24, 0xFD	; 253
+ 55c:	80 83       	st	Z, r24
+ 55e:	2f ef       	ldi	r18, 0xFF	; 255
+ 560:	8f e7       	ldi	r24, 0x7F	; 127
+ 562:	94 e0       	ldi	r25, 0x04	; 4
+ 564:	21 50       	subi	r18, 0x01	; 1
+ 566:	80 40       	sbci	r24, 0x00	; 0
+ 568:	90 40       	sbci	r25, 0x00	; 0
+ 56a:	e1 f7       	brne	.-8      	; 0x564 <jump2+0x2c>
+ 56c:	00 c0       	rjmp	.+0      	; 0x56e <jump2+0x36>
+ 56e:	00 00       	nop
+    _delay_ms(100);
+    frontLegHigh;
+ 570:	80 81       	ld	r24, Z
+ 572:	82 60       	ori	r24, 0x02	; 2
+ 574:	80 83       	st	Z, r24
+    backLegLow;
+ 576:	80 81       	ld	r24, Z
+ 578:	8e 7f       	andi	r24, 0xFE	; 254
+ 57a:	80 83       	st	Z, r24
+//     _delay_ms(500);
+//     startPos();
+//     _delay_ms(1000);
+}
+ 57c:	08 95       	ret
+
+0000057e <jump3>:
+
+void jump3()
+{
+    frontLegLow;
+ 57e:	e5 e0       	ldi	r30, 0x05	; 5
+ 580:	f1 e0       	ldi	r31, 0x01	; 1
+ 582:	80 81       	ld	r24, Z
+ 584:	8d 7f       	andi	r24, 0xFD	; 253
+ 586:	80 83       	st	Z, r24
+    backLegLow;
+ 588:	80 81       	ld	r24, Z
+ 58a:	8e 7f       	andi	r24, 0xFE	; 254
+ 58c:	80 83       	st	Z, r24
+ 58e:	22 e3       	ldi	r18, 0x32	; 50
+ 590:	83 eb       	ldi	r24, 0xB3	; 179
+ 592:	92 e0       	ldi	r25, 0x02	; 2
+ 594:	21 50       	subi	r18, 0x01	; 1
+ 596:	80 40       	sbci	r24, 0x00	; 0
+ 598:	90 40       	sbci	r25, 0x00	; 0
+ 59a:	e1 f7       	brne	.-8      	; 0x594 <jump3+0x16>
+ 59c:	00 c0       	rjmp	.+0      	; 0x59e <jump3+0x20>
+ 59e:	00 c0       	rjmp	.+0      	; 0x5a0 <jump3+0x22>
+    _delay_ms(60);
+    frontLegHigh;
+ 5a0:	80 81       	ld	r24, Z
+ 5a2:	82 60       	ori	r24, 0x02	; 2
+ 5a4:	80 83       	st	Z, r24
+    backLegHigh;
+ 5a6:	80 81       	ld	r24, Z
+ 5a8:	81 60       	ori	r24, 0x01	; 1
+ 5aa:	80 83       	st	Z, r24
+ 5ac:	26 e6       	ldi	r18, 0x66	; 102
+ 5ae:	86 e6       	ldi	r24, 0x66	; 102
+ 5b0:	95 e0       	ldi	r25, 0x05	; 5
+ 5b2:	21 50       	subi	r18, 0x01	; 1
+ 5b4:	80 40       	sbci	r24, 0x00	; 0
+ 5b6:	90 40       	sbci	r25, 0x00	; 0
+ 5b8:	e1 f7       	brne	.-8      	; 0x5b2 <jump3+0x34>
+    _delay_ms(120);
+    frontLegLow;
+ 5ba:	80 81       	ld	r24, Z
+ 5bc:	8d 7f       	andi	r24, 0xFD	; 253
+ 5be:	80 83       	st	Z, r24
+    backLegLow;
+ 5c0:	80 81       	ld	r24, Z
+ 5c2:	8e 7f       	andi	r24, 0xFE	; 254
+ 5c4:	80 83       	st	Z, r24
+    backJointLow;
+ 5c6:	11 98       	cbi	0x02, 1	; 2
+//     _delay_ms(500);
+//     startPos();
+//     _delay_ms(1000);
+}
+ 5c8:	08 95       	ret
+
+000005ca <tussock1_1>:
+
+void tussock1_1()
+{
+    backLegLow;
+ 5ca:	e5 e0       	ldi	r30, 0x05	; 5
+ 5cc:	f1 e0       	ldi	r31, 0x01	; 1
+ 5ce:	80 81       	ld	r24, Z
+ 5d0:	8e 7f       	andi	r24, 0xFE	; 254
+ 5d2:	80 83       	st	Z, r24
+    frontLegLow;
+ 5d4:	80 81       	ld	r24, Z
+ 5d6:	8d 7f       	andi	r24, 0xFD	; 253
+ 5d8:	80 83       	st	Z, r24
+ 5da:	2f ef       	ldi	r18, 0xFF	; 255
+ 5dc:	8f ef       	ldi	r24, 0xFF	; 255
+ 5de:	98 e0       	ldi	r25, 0x08	; 8
+ 5e0:	21 50       	subi	r18, 0x01	; 1
+ 5e2:	80 40       	sbci	r24, 0x00	; 0
+ 5e4:	90 40       	sbci	r25, 0x00	; 0
+ 5e6:	e1 f7       	brne	.-8      	; 0x5e0 <tussock1_1+0x16>
+ 5e8:	00 c0       	rjmp	.+0      	; 0x5ea <tussock1_1+0x20>
+ 5ea:	00 00       	nop
+    _delay_ms(200);
+    backLegHigh;
+ 5ec:	80 81       	ld	r24, Z
+ 5ee:	81 60       	ori	r24, 0x01	; 1
+ 5f0:	80 83       	st	Z, r24
+    frontLegHigh;
+ 5f2:	80 81       	ld	r24, Z
+ 5f4:	82 60       	ori	r24, 0x02	; 2
+ 5f6:	80 83       	st	Z, r24
+ 5f8:	26 e6       	ldi	r18, 0x66	; 102
+ 5fa:	86 e6       	ldi	r24, 0x66	; 102
+ 5fc:	95 e0       	ldi	r25, 0x05	; 5
+ 5fe:	21 50       	subi	r18, 0x01	; 1
+ 600:	80 40       	sbci	r24, 0x00	; 0
+ 602:	90 40       	sbci	r25, 0x00	; 0
+ 604:	e1 f7       	brne	.-8      	; 0x5fe <tussock1_1+0x34>
+    _delay_ms(120);
+    backLegLow;
+ 606:	80 81       	ld	r24, Z
+ 608:	8e 7f       	andi	r24, 0xFE	; 254
+ 60a:	80 83       	st	Z, r24
+ 60c:	2f ef       	ldi	r18, 0xFF	; 255
+ 60e:	8f e7       	ldi	r24, 0x7F	; 127
+ 610:	94 e0       	ldi	r25, 0x04	; 4
+ 612:	21 50       	subi	r18, 0x01	; 1
+ 614:	80 40       	sbci	r24, 0x00	; 0
+ 616:	90 40       	sbci	r25, 0x00	; 0
+ 618:	e1 f7       	brne	.-8      	; 0x612 <tussock1_1+0x48>
+ 61a:	00 c0       	rjmp	.+0      	; 0x61c <tussock1_1+0x52>
+ 61c:	00 00       	nop
+    _delay_ms(100);
+    frontJointLow;
+ 61e:	10 98       	cbi	0x02, 0	; 2
+ 620:	2f ef       	ldi	r18, 0xFF	; 255
+ 622:	8f eb       	ldi	r24, 0xBF	; 191
+ 624:	96 e0       	ldi	r25, 0x06	; 6
+ 626:	21 50       	subi	r18, 0x01	; 1
+ 628:	80 40       	sbci	r24, 0x00	; 0
+ 62a:	90 40       	sbci	r25, 0x00	; 0
+ 62c:	e1 f7       	brne	.-8      	; 0x626 <tussock1_1+0x5c>
+ 62e:	00 c0       	rjmp	.+0      	; 0x630 <tussock1_1+0x66>
+ 630:	00 00       	nop
+    _delay_ms(150);
+    backLegHigh;
+ 632:	80 81       	ld	r24, Z
+ 634:	81 60       	ori	r24, 0x01	; 1
+ 636:	80 83       	st	Z, r24
+}
+ 638:	08 95       	ret
+
+0000063a <tussock1_2>:
+
+void tussock1_2()
+{
+    backLegLow;
+ 63a:	e5 e0       	ldi	r30, 0x05	; 5
+ 63c:	f1 e0       	ldi	r31, 0x01	; 1
+ 63e:	80 81       	ld	r24, Z
+ 640:	8e 7f       	andi	r24, 0xFE	; 254
+ 642:	80 83       	st	Z, r24
+    frontLegLow;
+ 644:	80 81       	ld	r24, Z
+ 646:	8d 7f       	andi	r24, 0xFD	; 253
+ 648:	80 83       	st	Z, r24
+ 64a:	2f ef       	ldi	r18, 0xFF	; 255
+ 64c:	8f ef       	ldi	r24, 0xFF	; 255
+ 64e:	98 e0       	ldi	r25, 0x08	; 8
+ 650:	21 50       	subi	r18, 0x01	; 1
+ 652:	80 40       	sbci	r24, 0x00	; 0
+ 654:	90 40       	sbci	r25, 0x00	; 0
+ 656:	e1 f7       	brne	.-8      	; 0x650 <tussock1_2+0x16>
+ 658:	00 c0       	rjmp	.+0      	; 0x65a <tussock1_2+0x20>
+ 65a:	00 00       	nop
+    _delay_ms(200);
+    backLegHigh;
+ 65c:	80 81       	ld	r24, Z
+ 65e:	81 60       	ori	r24, 0x01	; 1
+ 660:	80 83       	st	Z, r24
+    frontLegHigh;
+ 662:	80 81       	ld	r24, Z
+ 664:	82 60       	ori	r24, 0x02	; 2
+ 666:	80 83       	st	Z, r24
+ 668:	26 e6       	ldi	r18, 0x66	; 102
+ 66a:	86 e6       	ldi	r24, 0x66	; 102
+ 66c:	95 e0       	ldi	r25, 0x05	; 5
+ 66e:	21 50       	subi	r18, 0x01	; 1
+ 670:	80 40       	sbci	r24, 0x00	; 0
+ 672:	90 40       	sbci	r25, 0x00	; 0
+ 674:	e1 f7       	brne	.-8      	; 0x66e <tussock1_2+0x34>
+    _delay_ms(120);
+    frontLegLow;
+ 676:	80 81       	ld	r24, Z
+ 678:	8d 7f       	andi	r24, 0xFD	; 253
+ 67a:	80 83       	st	Z, r24
+ 67c:	2f ef       	ldi	r18, 0xFF	; 255
+ 67e:	8f e7       	ldi	r24, 0x7F	; 127
+ 680:	94 e0       	ldi	r25, 0x04	; 4
+ 682:	21 50       	subi	r18, 0x01	; 1
+ 684:	80 40       	sbci	r24, 0x00	; 0
+ 686:	90 40       	sbci	r25, 0x00	; 0
+ 688:	e1 f7       	brne	.-8      	; 0x682 <tussock1_2+0x48>
+ 68a:	00 c0       	rjmp	.+0      	; 0x68c <tussock1_2+0x52>
+ 68c:	00 00       	nop
+    _delay_ms(100);
+    backJointHigh;
+ 68e:	11 9a       	sbi	0x02, 1	; 2
+ 690:	2f ef       	ldi	r18, 0xFF	; 255
+ 692:	8f eb       	ldi	r24, 0xBF	; 191
+ 694:	96 e0       	ldi	r25, 0x06	; 6
+ 696:	21 50       	subi	r18, 0x01	; 1
+ 698:	80 40       	sbci	r24, 0x00	; 0
+ 69a:	90 40       	sbci	r25, 0x00	; 0
+ 69c:	e1 f7       	brne	.-8      	; 0x696 <tussock1_2+0x5c>
+ 69e:	00 c0       	rjmp	.+0      	; 0x6a0 <tussock1_2+0x66>
+ 6a0:	00 00       	nop
+    _delay_ms(150);
+    frontLegHigh;
+ 6a2:	80 81       	ld	r24, Z
+ 6a4:	82 60       	ori	r24, 0x02	; 2
+ 6a6:	80 83       	st	Z, r24
+}
+ 6a8:	08 95       	ret
+
+000006aa <tussock2_1>:
+
+void tussock2_1()
+{
+            backLegLow;
+ 6aa:	e5 e0       	ldi	r30, 0x05	; 5
+ 6ac:	f1 e0       	ldi	r31, 0x01	; 1
+ 6ae:	80 81       	ld	r24, Z
+ 6b0:	8e 7f       	andi	r24, 0xFE	; 254
+ 6b2:	80 83       	st	Z, r24
+ 6b4:	2f ef       	ldi	r18, 0xFF	; 255
+ 6b6:	8f e3       	ldi	r24, 0x3F	; 63
+ 6b8:	92 e0       	ldi	r25, 0x02	; 2
+ 6ba:	21 50       	subi	r18, 0x01	; 1
+ 6bc:	80 40       	sbci	r24, 0x00	; 0
+ 6be:	90 40       	sbci	r25, 0x00	; 0
+ 6c0:	e1 f7       	brne	.-8      	; 0x6ba <tussock2_1+0x10>
+ 6c2:	00 c0       	rjmp	.+0      	; 0x6c4 <tussock2_1+0x1a>
+ 6c4:	00 00       	nop
+            _delay_ms(50);
+            frontLegLow;
+ 6c6:	80 81       	ld	r24, Z
+ 6c8:	8d 7f       	andi	r24, 0xFD	; 253
+ 6ca:	80 83       	st	Z, r24
+ 6cc:	2f ef       	ldi	r18, 0xFF	; 255
+ 6ce:	8f eb       	ldi	r24, 0xBF	; 191
+ 6d0:	96 e0       	ldi	r25, 0x06	; 6
+ 6d2:	21 50       	subi	r18, 0x01	; 1
+ 6d4:	80 40       	sbci	r24, 0x00	; 0
+ 6d6:	90 40       	sbci	r25, 0x00	; 0
+ 6d8:	e1 f7       	brne	.-8      	; 0x6d2 <tussock2_1+0x28>
+ 6da:	00 c0       	rjmp	.+0      	; 0x6dc <tussock2_1+0x32>
+ 6dc:	00 00       	nop
+            _delay_ms(150);
+            backLegHigh;
+ 6de:	80 81       	ld	r24, Z
+ 6e0:	81 60       	ori	r24, 0x01	; 1
+ 6e2:	80 83       	st	Z, r24
+ 6e4:	2f ef       	ldi	r18, 0xFF	; 255
+ 6e6:	8f e3       	ldi	r24, 0x3F	; 63
+ 6e8:	92 e0       	ldi	r25, 0x02	; 2
+ 6ea:	21 50       	subi	r18, 0x01	; 1
+ 6ec:	80 40       	sbci	r24, 0x00	; 0
+ 6ee:	90 40       	sbci	r25, 0x00	; 0
+ 6f0:	e1 f7       	brne	.-8      	; 0x6ea <tussock2_1+0x40>
+ 6f2:	00 c0       	rjmp	.+0      	; 0x6f4 <tussock2_1+0x4a>
+ 6f4:	00 00       	nop
+            _delay_ms(50);
+            frontLegHigh;
+ 6f6:	80 81       	ld	r24, Z
+ 6f8:	82 60       	ori	r24, 0x02	; 2
+ 6fa:	80 83       	st	Z, r24
+ 6fc:	2f ef       	ldi	r18, 0xFF	; 255
+ 6fe:	8f eb       	ldi	r24, 0xBF	; 191
+ 700:	96 e0       	ldi	r25, 0x06	; 6
+ 702:	21 50       	subi	r18, 0x01	; 1
+ 704:	80 40       	sbci	r24, 0x00	; 0
+ 706:	90 40       	sbci	r25, 0x00	; 0
+ 708:	e1 f7       	brne	.-8      	; 0x702 <tussock2_1+0x58>
+ 70a:	00 c0       	rjmp	.+0      	; 0x70c <tussock2_1+0x62>
+ 70c:	00 00       	nop
+            _delay_ms(150);
+            backLegLow;
+ 70e:	80 81       	ld	r24, Z
+ 710:	8e 7f       	andi	r24, 0xFE	; 254
+ 712:	80 83       	st	Z, r24
+ 714:	22 e3       	ldi	r18, 0x32	; 50
+ 716:	83 eb       	ldi	r24, 0xB3	; 179
+ 718:	92 e0       	ldi	r25, 0x02	; 2
+ 71a:	21 50       	subi	r18, 0x01	; 1
+ 71c:	80 40       	sbci	r24, 0x00	; 0
+ 71e:	90 40       	sbci	r25, 0x00	; 0
+ 720:	e1 f7       	brne	.-8      	; 0x71a <tussock2_1+0x70>
+ 722:	00 c0       	rjmp	.+0      	; 0x724 <tussock2_1+0x7a>
+ 724:	00 c0       	rjmp	.+0      	; 0x726 <tussock2_1+0x7c>
+            _delay_ms(60);
+            frontJointLow;
+ 726:	10 98       	cbi	0x02, 0	; 2
+            frontLegLow;
+ 728:	80 81       	ld	r24, Z
+ 72a:	8d 7f       	andi	r24, 0xFD	; 253
+ 72c:	80 83       	st	Z, r24
+ 72e:	2c ec       	ldi	r18, 0xCC	; 204
+ 730:	8c ec       	ldi	r24, 0xCC	; 204
+ 732:	91 e0       	ldi	r25, 0x01	; 1
+ 734:	21 50       	subi	r18, 0x01	; 1
+ 736:	80 40       	sbci	r24, 0x00	; 0
+ 738:	90 40       	sbci	r25, 0x00	; 0
+ 73a:	e1 f7       	brne	.-8      	; 0x734 <tussock2_1+0x8a>
+ 73c:	00 c0       	rjmp	.+0      	; 0x73e <tussock2_1+0x94>
+            _delay_ms(40);
+            backLegHigh;
+ 73e:	80 81       	ld	r24, Z
+ 740:	81 60       	ori	r24, 0x01	; 1
+ 742:	80 83       	st	Z, r24
+            frontLegHigh;
+ 744:	80 81       	ld	r24, Z
+ 746:	82 60       	ori	r24, 0x02	; 2
+ 748:	80 83       	st	Z, r24
+}
+ 74a:	08 95       	ret
+
+0000074c <tussock2_2>:
+
+void tussock2_2()
+{
+        frontLegLow;
+ 74c:	e5 e0       	ldi	r30, 0x05	; 5
+ 74e:	f1 e0       	ldi	r31, 0x01	; 1
+ 750:	80 81       	ld	r24, Z
+ 752:	8d 7f       	andi	r24, 0xFD	; 253
+ 754:	80 83       	st	Z, r24
+ 756:	2f ef       	ldi	r18, 0xFF	; 255
+ 758:	8f e3       	ldi	r24, 0x3F	; 63
+ 75a:	92 e0       	ldi	r25, 0x02	; 2
+ 75c:	21 50       	subi	r18, 0x01	; 1
+ 75e:	80 40       	sbci	r24, 0x00	; 0
+ 760:	90 40       	sbci	r25, 0x00	; 0
+ 762:	e1 f7       	brne	.-8      	; 0x75c <tussock2_2+0x10>
+ 764:	00 c0       	rjmp	.+0      	; 0x766 <tussock2_2+0x1a>
+ 766:	00 00       	nop
+        _delay_ms(50);
+        backLegLow;
+ 768:	80 81       	ld	r24, Z
+ 76a:	8e 7f       	andi	r24, 0xFE	; 254
+ 76c:	80 83       	st	Z, r24
+ 76e:	2f ef       	ldi	r18, 0xFF	; 255
+ 770:	8f eb       	ldi	r24, 0xBF	; 191
+ 772:	96 e0       	ldi	r25, 0x06	; 6
+ 774:	21 50       	subi	r18, 0x01	; 1
+ 776:	80 40       	sbci	r24, 0x00	; 0
+ 778:	90 40       	sbci	r25, 0x00	; 0
+ 77a:	e1 f7       	brne	.-8      	; 0x774 <tussock2_2+0x28>
+ 77c:	00 c0       	rjmp	.+0      	; 0x77e <tussock2_2+0x32>
+ 77e:	00 00       	nop
+        _delay_ms(150);
+        frontLegHigh;
+ 780:	80 81       	ld	r24, Z
+ 782:	82 60       	ori	r24, 0x02	; 2
+ 784:	80 83       	st	Z, r24
+ 786:	2f ef       	ldi	r18, 0xFF	; 255
+ 788:	8f e3       	ldi	r24, 0x3F	; 63
+ 78a:	92 e0       	ldi	r25, 0x02	; 2
+ 78c:	21 50       	subi	r18, 0x01	; 1
+ 78e:	80 40       	sbci	r24, 0x00	; 0
+ 790:	90 40       	sbci	r25, 0x00	; 0
+ 792:	e1 f7       	brne	.-8      	; 0x78c <tussock2_2+0x40>
+ 794:	00 c0       	rjmp	.+0      	; 0x796 <tussock2_2+0x4a>
+ 796:	00 00       	nop
+        _delay_ms(50);
+        backLegHigh;
+ 798:	80 81       	ld	r24, Z
+ 79a:	81 60       	ori	r24, 0x01	; 1
+ 79c:	80 83       	st	Z, r24
+ 79e:	2f ef       	ldi	r18, 0xFF	; 255
+ 7a0:	8f eb       	ldi	r24, 0xBF	; 191
+ 7a2:	96 e0       	ldi	r25, 0x06	; 6
+ 7a4:	21 50       	subi	r18, 0x01	; 1
+ 7a6:	80 40       	sbci	r24, 0x00	; 0
+ 7a8:	90 40       	sbci	r25, 0x00	; 0
+ 7aa:	e1 f7       	brne	.-8      	; 0x7a4 <tussock2_2+0x58>
+ 7ac:	00 c0       	rjmp	.+0      	; 0x7ae <tussock2_2+0x62>
+ 7ae:	00 00       	nop
+        _delay_ms(150);
+        frontLegLow;
+ 7b0:	80 81       	ld	r24, Z
+ 7b2:	8d 7f       	andi	r24, 0xFD	; 253
+ 7b4:	80 83       	st	Z, r24
+ 7b6:	22 e3       	ldi	r18, 0x32	; 50
+ 7b8:	83 eb       	ldi	r24, 0xB3	; 179
+ 7ba:	92 e0       	ldi	r25, 0x02	; 2
+ 7bc:	21 50       	subi	r18, 0x01	; 1
+ 7be:	80 40       	sbci	r24, 0x00	; 0
+ 7c0:	90 40       	sbci	r25, 0x00	; 0
+ 7c2:	e1 f7       	brne	.-8      	; 0x7bc <tussock2_2+0x70>
+ 7c4:	00 c0       	rjmp	.+0      	; 0x7c6 <tussock2_2+0x7a>
+ 7c6:	00 c0       	rjmp	.+0      	; 0x7c8 <tussock2_2+0x7c>
+        _delay_ms(60);
+        backJointHigh;
+ 7c8:	11 9a       	sbi	0x02, 1	; 2
+        backLegLow;
+ 7ca:	80 81       	ld	r24, Z
+ 7cc:	8e 7f       	andi	r24, 0xFE	; 254
+ 7ce:	80 83       	st	Z, r24
+ 7d0:	2c ec       	ldi	r18, 0xCC	; 204
+ 7d2:	8c ec       	ldi	r24, 0xCC	; 204
+ 7d4:	91 e0       	ldi	r25, 0x01	; 1
+ 7d6:	21 50       	subi	r18, 0x01	; 1
+ 7d8:	80 40       	sbci	r24, 0x00	; 0
+ 7da:	90 40       	sbci	r25, 0x00	; 0
+ 7dc:	e1 f7       	brne	.-8      	; 0x7d6 <tussock2_2+0x8a>
+ 7de:	00 c0       	rjmp	.+0      	; 0x7e0 <tussock2_2+0x94>
+        _delay_ms(40);
+        backLegHigh;
+ 7e0:	80 81       	ld	r24, Z
+ 7e2:	81 60       	ori	r24, 0x01	; 1
+ 7e4:	80 83       	st	Z, r24
+        frontLegHigh;
+ 7e6:	80 81       	ld	r24, Z
+ 7e8:	82 60       	ori	r24, 0x02	; 2
+ 7ea:	80 83       	st	Z, r24
+}
+ 7ec:	08 95       	ret
+
+000007ee <mountain>:
+
+void mountain()
+{
+    frontLegLow;
+ 7ee:	e5 e0       	ldi	r30, 0x05	; 5
+ 7f0:	f1 e0       	ldi	r31, 0x01	; 1
+ 7f2:	80 81       	ld	r24, Z
+ 7f4:	8d 7f       	andi	r24, 0xFD	; 253
+ 7f6:	80 83       	st	Z, r24
+    backLegLow;
+ 7f8:	80 81       	ld	r24, Z
+ 7fa:	8e 7f       	andi	r24, 0xFE	; 254
+ 7fc:	80 83       	st	Z, r24
+ 7fe:	29 e9       	ldi	r18, 0x99	; 153
+ 800:	89 e9       	ldi	r24, 0x99	; 153
+ 802:	93 e0       	ldi	r25, 0x03	; 3
+ 804:	21 50       	subi	r18, 0x01	; 1
+ 806:	80 40       	sbci	r24, 0x00	; 0
+ 808:	90 40       	sbci	r25, 0x00	; 0
+ 80a:	e1 f7       	brne	.-8      	; 0x804 <mountain+0x16>
+ 80c:	00 00       	nop
+    _delay_ms(80);
+    frontLegHigh;
+ 80e:	80 81       	ld	r24, Z
+ 810:	82 60       	ori	r24, 0x02	; 2
+ 812:	80 83       	st	Z, r24
+ 814:	29 e9       	ldi	r18, 0x99	; 153
+ 816:	89 e9       	ldi	r24, 0x99	; 153
+ 818:	93 e0       	ldi	r25, 0x03	; 3
+ 81a:	21 50       	subi	r18, 0x01	; 1
+ 81c:	80 40       	sbci	r24, 0x00	; 0
+ 81e:	90 40       	sbci	r25, 0x00	; 0
+ 820:	e1 f7       	brne	.-8      	; 0x81a <mountain+0x2c>
+ 822:	00 00       	nop
+    //backLegLow;
+    _delay_ms(80);
+}
+ 824:	08 95       	ret
+
+00000826 <sahil_gait>:
+
+void sahil_gait()
+{
+    backLegLow;
+ 826:	e5 e0       	ldi	r30, 0x05	; 5
+ 828:	f1 e0       	ldi	r31, 0x01	; 1
+ 82a:	80 81       	ld	r24, Z
+ 82c:	8e 7f       	andi	r24, 0xFE	; 254
+ 82e:	80 83       	st	Z, r24
+    backJointHigh;
+ 830:	11 9a       	sbi	0x02, 1	; 2
+    frontJointHigh;
+ 832:	10 9a       	sbi	0x02, 0	; 2
+ 834:	2f ef       	ldi	r18, 0xFF	; 255
+ 836:	8f ef       	ldi	r24, 0xFF	; 255
+ 838:	98 e0       	ldi	r25, 0x08	; 8
+ 83a:	21 50       	subi	r18, 0x01	; 1
+ 83c:	80 40       	sbci	r24, 0x00	; 0
+ 83e:	90 40       	sbci	r25, 0x00	; 0
+ 840:	e1 f7       	brne	.-8      	; 0x83a <sahil_gait+0x14>
+ 842:	00 c0       	rjmp	.+0      	; 0x844 <sahil_gait+0x1e>
+ 844:	00 00       	nop
+    _delay_ms(200);
+    backLegHigh;
+ 846:	80 81       	ld	r24, Z
+ 848:	81 60       	ori	r24, 0x01	; 1
+ 84a:	80 83       	st	Z, r24
+    backJointHigh;
+ 84c:	11 9a       	sbi	0x02, 1	; 2
+    frontJointHigh;
+ 84e:	10 9a       	sbi	0x02, 0	; 2
+ 850:	2f ef       	ldi	r18, 0xFF	; 255
+ 852:	8f ef       	ldi	r24, 0xFF	; 255
+ 854:	98 e0       	ldi	r25, 0x08	; 8
+ 856:	21 50       	subi	r18, 0x01	; 1
+ 858:	80 40       	sbci	r24, 0x00	; 0
+ 85a:	90 40       	sbci	r25, 0x00	; 0
+ 85c:	e1 f7       	brne	.-8      	; 0x856 <sahil_gait+0x30>
+ 85e:	00 c0       	rjmp	.+0      	; 0x860 <sahil_gait+0x3a>
+ 860:	00 00       	nop
+    _delay_ms(200);
+    frontLegLow;
+ 862:	80 81       	ld	r24, Z
+ 864:	8d 7f       	andi	r24, 0xFD	; 253
+ 866:	80 83       	st	Z, r24
+    backJointHigh;
+ 868:	11 9a       	sbi	0x02, 1	; 2
+    frontJointHigh;
+ 86a:	10 9a       	sbi	0x02, 0	; 2
+ 86c:	2f ef       	ldi	r18, 0xFF	; 255
+ 86e:	8f ef       	ldi	r24, 0xFF	; 255
+ 870:	98 e0       	ldi	r25, 0x08	; 8
+ 872:	21 50       	subi	r18, 0x01	; 1
+ 874:	80 40       	sbci	r24, 0x00	; 0
+ 876:	90 40       	sbci	r25, 0x00	; 0
+ 878:	e1 f7       	brne	.-8      	; 0x872 <sahil_gait+0x4c>
+ 87a:	00 c0       	rjmp	.+0      	; 0x87c <sahil_gait+0x56>
+ 87c:	00 00       	nop
+    _delay_ms(200);
+    frontLegHigh;
+ 87e:	80 81       	ld	r24, Z
+ 880:	82 60       	ori	r24, 0x02	; 2
+ 882:	80 83       	st	Z, r24
+}
+ 884:	08 95       	ret
+
+00000886 <serialstart_3>:
+void serialstart_3()
+{
+    UBRR2H=BAUDRATE>>8;
+ 886:	10 92 d5 00 	sts	0x00D5, r1	; 0x8000d5 <__TEXT_REGION_LENGTH__+0x7000d5>
+    UBRR2L=BAUDRATE;
+ 88a:	8f e5       	ldi	r24, 0x5F	; 95
+ 88c:	80 93 d4 00 	sts	0x00D4, r24	; 0x8000d4 <__TEXT_REGION_LENGTH__+0x7000d4>
+    UCSR2B=0b10011000;//enable RXEN TXEN
+ 890:	88 e9       	ldi	r24, 0x98	; 152
+ 892:	80 93 d1 00 	sts	0x00D1, r24	; 0x8000d1 <__TEXT_REGION_LENGTH__+0x7000d1>
+    UCSR2C=0b00000110;// UCSZ1 UCSZ0
+ 896:	86 e0       	ldi	r24, 0x06	; 6
+ 898:	80 93 d2 00 	sts	0x00D2, r24	; 0x8000d2 <__TEXT_REGION_LENGTH__+0x7000d2>
+}
+ 89c:	08 95       	ret
+
+0000089e <__vector_51>:
+
+ISR(USART2_RX_vect)
+{
+ 89e:	1f 92       	push	r1
+ 8a0:	1f b6       	in	r1, 0x3f	; 63
+ 8a2:	1f 92       	push	r1
+ 8a4:	11 24       	eor	r1, r1
+ 8a6:	2f 93       	push	r18
+ 8a8:	2b b7       	in	r18, 0x3b	; 59
+ 8aa:	2f 93       	push	r18
+ 8ac:	3f 93       	push	r19
+ 8ae:	4f 93       	push	r20
+ 8b0:	5f 93       	push	r21
+ 8b2:	8f 93       	push	r24
+ 8b4:	9f 93       	push	r25
+ 8b6:	af 93       	push	r26
+ 8b8:	bf 93       	push	r27
+ 8ba:	ef 93       	push	r30
+ 8bc:	ff 93       	push	r31
+    RX_count=1;
+ 8be:	21 e0       	ldi	r18, 0x01	; 1
+ 8c0:	30 e0       	ldi	r19, 0x00	; 0
+ 8c2:	30 93 6d 02 	sts	0x026D, r19	; 0x80026d <RX_count+0x1>
+ 8c6:	20 93 6c 02 	sts	0x026C, r18	; 0x80026c <RX_count>
+    RX_raw=UDR2;
+ 8ca:	e0 91 d6 00 	lds	r30, 0x00D6	; 0x8000d6 <__TEXT_REGION_LENGTH__+0x7000d6>
+ 8ce:	8e 2f       	mov	r24, r30
+ 8d0:	90 e0       	ldi	r25, 0x00	; 0
+ 8d2:	90 93 15 02 	sts	0x0215, r25	; 0x800215 <RX_raw+0x1>
+ 8d6:	80 93 14 02 	sts	0x0214, r24	; 0x800214 <RX_raw>
+    current=RX_raw;
+ 8da:	90 93 45 02 	sts	0x0245, r25	; 0x800245 <current+0x1>
+ 8de:	80 93 44 02 	sts	0x0244, r24	; 0x800244 <current>
+    if ((RX_raw>200) && (RX_raw<255))                    //201 to 216 for addresses of analog values, 231 to 246 for buttons;
+ 8e2:	ac 01       	movw	r20, r24
+ 8e4:	49 5c       	subi	r20, 0xC9	; 201
+ 8e6:	51 09       	sbc	r21, r1
+ 8e8:	46 33       	cpi	r20, 0x36	; 54
+ 8ea:	51 05       	cpc	r21, r1
+ 8ec:	28 f5       	brcc	.+74     	; 0x938 <__vector_51+0x9a>
+    {
+        RX_ad=RX_raw;
+ 8ee:	90 93 13 02 	sts	0x0213, r25	; 0x800213 <RX_ad+0x1>
+ 8f2:	80 93 12 02 	sts	0x0212, r24	; 0x800212 <RX_ad>
+        //        if ((RX_raw>210) && (RX_raw<227))
+        //        {
+        //            uint8_t r_temp0=(RX_raw-211);
+        //            butt_rel[r_temp0]=1;
+        //        }
+        if ((RX_raw>230) && (RX_raw<247))
+ 8f6:	4e 51       	subi	r20, 0x1E	; 30
+ 8f8:	51 09       	sbc	r21, r1
+ 8fa:	40 31       	cpi	r20, 0x10	; 16
+ 8fc:	51 05       	cpc	r21, r1
+ 8fe:	40 f4       	brcc	.+16     	; 0x910 <__vector_51+0x72>
+        {
+            uint8_t r_temp0=(RX_raw-231);
+ 900:	e7 5e       	subi	r30, 0xE7	; 231
+            butt[r_temp0]=1;
+ 902:	f0 e0       	ldi	r31, 0x00	; 0
+ 904:	ee 0f       	add	r30, r30
+ 906:	ff 1f       	adc	r31, r31
+ 908:	e2 59       	subi	r30, 0x92	; 146
+ 90a:	fd 4f       	sbci	r31, 0xFD	; 253
+ 90c:	31 83       	std	Z+1, r19	; 0x01
+ 90e:	20 83       	st	Z, r18
+        if (r_temp1<16)
+        {
+            RX[r_temp1]=RX_raw;
+        }
+    }
+    previous=current;
+ 910:	90 93 43 02 	sts	0x0243, r25	; 0x800243 <previous+0x1>
+ 914:	80 93 42 02 	sts	0x0242, r24	; 0x800242 <previous>
+}
+ 918:	ff 91       	pop	r31
+ 91a:	ef 91       	pop	r30
+ 91c:	bf 91       	pop	r27
+ 91e:	af 91       	pop	r26
+ 920:	9f 91       	pop	r25
+ 922:	8f 91       	pop	r24
+ 924:	5f 91       	pop	r21
+ 926:	4f 91       	pop	r20
+ 928:	3f 91       	pop	r19
+ 92a:	2f 91       	pop	r18
+ 92c:	2b bf       	out	0x3b, r18	; 59
+ 92e:	2f 91       	pop	r18
+ 930:	1f 90       	pop	r1
+ 932:	1f be       	out	0x3f, r1	; 63
+ 934:	1f 90       	pop	r1
+ 936:	18 95       	reti
+    else if ((RX_raw>=0) && (RX_raw<201))
+ 938:	89 3c       	cpi	r24, 0xC9	; 201
+ 93a:	91 05       	cpc	r25, r1
+ 93c:	48 f7       	brcc	.-46     	; 0x910 <__vector_51+0x72>
+        uint8_t r_temp1=(RX_ad-201);
+ 93e:	a0 91 12 02 	lds	r26, 0x0212	; 0x800212 <RX_ad>
+ 942:	a9 5c       	subi	r26, 0xC9	; 201
+        if (r_temp1<16)
+ 944:	a0 31       	cpi	r26, 0x10	; 16
+ 946:	20 f7       	brcc	.-56     	; 0x910 <__vector_51+0x72>
+            RX[r_temp1]=RX_raw;
+ 948:	b0 e0       	ldi	r27, 0x00	; 0
+ 94a:	a8 5e       	subi	r26, 0xE8	; 232
+ 94c:	bd 4f       	sbci	r27, 0xFD	; 253
+ 94e:	ec 93       	st	X, r30
+ 950:	df cf       	rjmp	.-66     	; 0x910 <__vector_51+0x72>
+
+00000952 <receive>:
+//     yj1=map_value(RX[0],0,RX_range,(-pwm_range),pwm_range);
+//     xj1=map_value(RX[1],0,RX_range,pwm_range,(-pwm_range));
+//     yj2=map_value(RX[2],0,RX_range,(-pwm_range),pwm_range);
+//     xj2=map_value(RX[3],0,RX_range,pwm_range,(-pwm_range));
+    
+    if (butt[PS_START]==1)
+ 952:	80 91 8a 02 	lds	r24, 0x028A	; 0x80028a <butt+0x1c>
+ 956:	90 91 8b 02 	lds	r25, 0x028B	; 0x80028b <butt+0x1d>
+ 95a:	01 97       	sbiw	r24, 0x01	; 1
+ 95c:	31 f4       	brne	.+12     	; 0x96a <receive+0x18>
+    {
+        startPos();
+ 95e:	0e 94 ab 00 	call	0x156	; 0x156 <startPos>
+        butt[PS_START]=0;
+ 962:	10 92 8b 02 	sts	0x028B, r1	; 0x80028b <butt+0x1d>
+ 966:	10 92 8a 02 	sts	0x028A, r1	; 0x80028a <butt+0x1c>
+    }
+    if (butt[PS_SELECT]==1)
+ 96a:	80 91 8c 02 	lds	r24, 0x028C	; 0x80028c <butt+0x1e>
+ 96e:	90 91 8d 02 	lds	r25, 0x028D	; 0x80028d <butt+0x1f>
+ 972:	01 97       	sbiw	r24, 0x01	; 1
+ 974:	31 f4       	brne	.+12     	; 0x982 <receive+0x30>
+    {
+        //hop1 ^=1;
+        sandStart();
+ 976:	0e 94 24 02 	call	0x448	; 0x448 <sandStart>
+        butt[PS_SELECT]=0;
+ 97a:	10 92 8d 02 	sts	0x028D, r1	; 0x80028d <butt+0x1f>
+ 97e:	10 92 8c 02 	sts	0x028C, r1	; 0x80028c <butt+0x1e>
+    }
+    if (butt[PS_UP]==1)
+ 982:	80 91 82 02 	lds	r24, 0x0282	; 0x800282 <butt+0x14>
+ 986:	90 91 83 02 	lds	r25, 0x0283	; 0x800283 <butt+0x15>
+ 98a:	01 97       	sbiw	r24, 0x01	; 1
+ 98c:	71 f4       	brne	.+28     	; 0x9aa <receive+0x58>
+    {
+        //fow1 ^=1;
+        //hop1 ^= 1;
+        //backLegHigh;
+        bg1^=1;
+ 98e:	80 91 3c 02 	lds	r24, 0x023C	; 0x80023c <bg1>
+ 992:	90 91 3d 02 	lds	r25, 0x023D	; 0x80023d <bg1+0x1>
+ 996:	21 e0       	ldi	r18, 0x01	; 1
+ 998:	82 27       	eor	r24, r18
+ 99a:	90 93 3d 02 	sts	0x023D, r25	; 0x80023d <bg1+0x1>
+ 99e:	80 93 3c 02 	sts	0x023C, r24	; 0x80023c <bg1>
+        butt[PS_UP]=0;
+ 9a2:	10 92 83 02 	sts	0x0283, r1	; 0x800283 <butt+0x15>
+ 9a6:	10 92 82 02 	sts	0x0282, r1	; 0x800282 <butt+0x14>
+    }
+    if (butt[PS_DOWN]==1)
+ 9aa:	80 91 86 02 	lds	r24, 0x0286	; 0x800286 <butt+0x18>
+ 9ae:	90 91 87 02 	lds	r25, 0x0287	; 0x800287 <butt+0x19>
+ 9b2:	01 97       	sbiw	r24, 0x01	; 1
+ 9b4:	71 f4       	brne	.+28     	; 0x9d2 <receive+0x80>
+    {
+        //pronk^=1;
+        bg2^=1;
+ 9b6:	80 91 3a 02 	lds	r24, 0x023A	; 0x80023a <bg2>
+ 9ba:	90 91 3b 02 	lds	r25, 0x023B	; 0x80023b <bg2+0x1>
+ 9be:	21 e0       	ldi	r18, 0x01	; 1
+ 9c0:	82 27       	eor	r24, r18
+ 9c2:	90 93 3b 02 	sts	0x023B, r25	; 0x80023b <bg2+0x1>
+ 9c6:	80 93 3a 02 	sts	0x023A, r24	; 0x80023a <bg2>
+        butt[PS_DOWN]=0;
+ 9ca:	10 92 87 02 	sts	0x0287, r1	; 0x800287 <butt+0x19>
+ 9ce:	10 92 86 02 	sts	0x0286, r1	; 0x800286 <butt+0x18>
+    }
+    if (butt[PS_LEFT]==1)
+ 9d2:	80 91 84 02 	lds	r24, 0x0284	; 0x800284 <butt+0x16>
+ 9d6:	90 91 85 02 	lds	r25, 0x0285	; 0x800285 <butt+0x17>
+ 9da:	01 97       	sbiw	r24, 0x01	; 1
+ 9dc:	31 f4       	brne	.+12     	; 0x9ea <receive+0x98>
+    {
+        backJointLow;
+ 9de:	11 98       	cbi	0x02, 1	; 2
+        frontJointHigh;
+ 9e0:	10 9a       	sbi	0x02, 0	; 2
+        butt[PS_LEFT]=0;
+ 9e2:	10 92 85 02 	sts	0x0285, r1	; 0x800285 <butt+0x17>
+ 9e6:	10 92 84 02 	sts	0x0284, r1	; 0x800284 <butt+0x16>
+    }
+    if (butt[PS_RIGHT]==1)
+ 9ea:	80 91 88 02 	lds	r24, 0x0288	; 0x800288 <butt+0x1a>
+ 9ee:	90 91 89 02 	lds	r25, 0x0289	; 0x800289 <butt+0x1b>
+ 9f2:	01 97       	sbiw	r24, 0x01	; 1
+ 9f4:	31 f4       	brne	.+12     	; 0xa02 <receive+0xb0>
+    {
+        backJointHigh;
+ 9f6:	11 9a       	sbi	0x02, 1	; 2
+        frontJointLow;
+ 9f8:	10 98       	cbi	0x02, 0	; 2
+        
+        butt[PS_RIGHT]=0;
+ 9fa:	10 92 89 02 	sts	0x0289, r1	; 0x800289 <butt+0x1b>
+ 9fe:	10 92 88 02 	sts	0x0288, r1	; 0x800288 <butt+0x1a>
+    }
+    if (butt[PS_SQUARE]==1)
+ a02:	80 91 7c 02 	lds	r24, 0x027C	; 0x80027c <butt+0xe>
+ a06:	90 91 7d 02 	lds	r25, 0x027D	; 0x80027d <butt+0xf>
+ a0a:	01 97       	sbiw	r24, 0x01	; 1
+ a0c:	71 f4       	brne	.+28     	; 0xa2a <receive+0xd8>
+    {
+        sdd^=1;
+ a0e:	80 91 2c 02 	lds	r24, 0x022C	; 0x80022c <sdd>
+ a12:	90 91 2d 02 	lds	r25, 0x022D	; 0x80022d <sdd+0x1>
+ a16:	21 e0       	ldi	r18, 0x01	; 1
+ a18:	82 27       	eor	r24, r18
+ a1a:	90 93 2d 02 	sts	0x022D, r25	; 0x80022d <sdd+0x1>
+ a1e:	80 93 2c 02 	sts	0x022C, r24	; 0x80022c <sdd>
+        butt[PS_SQUARE]=0;
+ a22:	10 92 7d 02 	sts	0x027D, r1	; 0x80027d <butt+0xf>
+ a26:	10 92 7c 02 	sts	0x027C, r1	; 0x80027c <butt+0xe>
+    }
+    if (butt[PS_CIRCLE]==1)
+ a2a:	80 91 80 02 	lds	r24, 0x0280	; 0x800280 <butt+0x12>
+ a2e:	90 91 81 02 	lds	r25, 0x0281	; 0x800281 <butt+0x13>
+ a32:	01 97       	sbiw	r24, 0x01	; 1
+ a34:	71 f4       	brne	.+28     	; 0xa52 <receive+0x100>
+    {
+        sdu^=1;
+ a36:	80 91 30 02 	lds	r24, 0x0230	; 0x800230 <sdu>
+ a3a:	90 91 31 02 	lds	r25, 0x0231	; 0x800231 <sdu+0x1>
+ a3e:	21 e0       	ldi	r18, 0x01	; 1
+ a40:	82 27       	eor	r24, r18
+ a42:	90 93 31 02 	sts	0x0231, r25	; 0x800231 <sdu+0x1>
+ a46:	80 93 30 02 	sts	0x0230, r24	; 0x800230 <sdu>
+        butt[PS_CIRCLE]=0;
+ a4a:	10 92 81 02 	sts	0x0281, r1	; 0x800281 <butt+0x13>
+ a4e:	10 92 80 02 	sts	0x0280, r1	; 0x800280 <butt+0x12>
+    }
+    if (butt[PS_TRIANGLE]==1)
+ a52:	80 91 7a 02 	lds	r24, 0x027A	; 0x80027a <butt+0xc>
+ a56:	90 91 7b 02 	lds	r25, 0x027B	; 0x80027b <butt+0xd>
+ a5a:	01 97       	sbiw	r24, 0x01	; 1
+ a5c:	71 f4       	brne	.+28     	; 0xa7a <receive+0x128>
+    {
+        ju1^=1;
+ a5e:	80 91 36 02 	lds	r24, 0x0236	; 0x800236 <ju1>
+ a62:	90 91 37 02 	lds	r25, 0x0237	; 0x800237 <ju1+0x1>
+ a66:	21 e0       	ldi	r18, 0x01	; 1
+ a68:	82 27       	eor	r24, r18
+ a6a:	90 93 37 02 	sts	0x0237, r25	; 0x800237 <ju1+0x1>
+ a6e:	80 93 36 02 	sts	0x0236, r24	; 0x800236 <ju1>
+        butt[PS_TRIANGLE]=0;
+ a72:	10 92 7b 02 	sts	0x027B, r1	; 0x80027b <butt+0xd>
+ a76:	10 92 7a 02 	sts	0x027A, r1	; 0x80027a <butt+0xc>
+    }
+    if (butt[PS_CROSS]==1)
+ a7a:	80 91 7e 02 	lds	r24, 0x027E	; 0x80027e <butt+0x10>
+ a7e:	90 91 7f 02 	lds	r25, 0x027F	; 0x80027f <butt+0x11>
+ a82:	01 97       	sbiw	r24, 0x01	; 1
+ a84:	71 f4       	brne	.+28     	; 0xaa2 <receive+0x150>
+    {
+        opj1^=1;
+ a86:	80 91 2e 02 	lds	r24, 0x022E	; 0x80022e <opj1>
+ a8a:	90 91 2f 02 	lds	r25, 0x022F	; 0x80022f <opj1+0x1>
+ a8e:	21 e0       	ldi	r18, 0x01	; 1
+ a90:	82 27       	eor	r24, r18
+ a92:	90 93 2f 02 	sts	0x022F, r25	; 0x80022f <opj1+0x1>
+ a96:	80 93 2e 02 	sts	0x022E, r24	; 0x80022e <opj1>
+        butt[PS_CROSS]=0;
+ a9a:	10 92 7f 02 	sts	0x027F, r1	; 0x80027f <butt+0x11>
+ a9e:	10 92 7e 02 	sts	0x027E, r1	; 0x80027e <butt+0x10>
+    }
+    if (butt[PS_L1]==1)
+ aa2:	80 91 6e 02 	lds	r24, 0x026E	; 0x80026e <butt>
+ aa6:	90 91 6f 02 	lds	r25, 0x026F	; 0x80026f <butt+0x1>
+ aaa:	01 97       	sbiw	r24, 0x01	; 1
+ aac:	31 f4       	brne	.+12     	; 0xaba <receive+0x168>
+    {
+        tussock1_1();
+ aae:	0e 94 e5 02 	call	0x5ca	; 0x5ca <tussock1_1>
+        //bg1 ^=1;
+        butt[PS_L1]=0;
+ ab2:	10 92 6f 02 	sts	0x026F, r1	; 0x80026f <butt+0x1>
+ ab6:	10 92 6e 02 	sts	0x026E, r1	; 0x80026e <butt>
+    }
+    if (butt[PS_R1]==1)
+ aba:	80 91 70 02 	lds	r24, 0x0270	; 0x800270 <butt+0x2>
+ abe:	90 91 71 02 	lds	r25, 0x0271	; 0x800271 <butt+0x3>
+ ac2:	01 97       	sbiw	r24, 0x01	; 1
+ ac4:	31 f4       	brne	.+12     	; 0xad2 <receive+0x180>
+    {
+        tussock2_1();
+ ac6:	0e 94 55 03 	call	0x6aa	; 0x6aa <tussock2_1>
+        //bg2^=1;
+        butt[PS_R1]=0;
+ aca:	10 92 71 02 	sts	0x0271, r1	; 0x800271 <butt+0x3>
+ ace:	10 92 70 02 	sts	0x0270, r1	; 0x800270 <butt+0x2>
+    }
+    if (butt[PS_L2]==1)
+ ad2:	80 91 72 02 	lds	r24, 0x0272	; 0x800272 <butt+0x4>
+ ad6:	90 91 73 02 	lds	r25, 0x0273	; 0x800273 <butt+0x5>
+ ada:	01 97       	sbiw	r24, 0x01	; 1
+ adc:	31 f4       	brne	.+12     	; 0xaea <receive+0x198>
+    {
+        tussock1_2();
+ ade:	0e 94 1d 03 	call	0x63a	; 0x63a <tussock1_2>
+        //nw ^=1;
+        butt[PS_L2]=0;
+ ae2:	10 92 73 02 	sts	0x0273, r1	; 0x800273 <butt+0x5>
+ ae6:	10 92 72 02 	sts	0x0272, r1	; 0x800272 <butt+0x4>
+    }
+    if (butt[PS_R2]==1)
+ aea:	80 91 74 02 	lds	r24, 0x0274	; 0x800274 <butt+0x6>
+ aee:	90 91 75 02 	lds	r25, 0x0275	; 0x800275 <butt+0x7>
+ af2:	01 97       	sbiw	r24, 0x01	; 1
+ af4:	31 f4       	brne	.+12     	; 0xb02 <receive+0x1b0>
+    {
+        tussock2_2();
+ af6:	0e 94 a6 03 	call	0x74c	; 0x74c <tussock2_2>
+        //j3^=1;
+        butt[PS_R2]=0;
+ afa:	10 92 75 02 	sts	0x0275, r1	; 0x800275 <butt+0x7>
+ afe:	10 92 74 02 	sts	0x0274, r1	; 0x800274 <butt+0x6>
+    }
+    if (butt[PS_L3]==1)
+ b02:	80 91 76 02 	lds	r24, 0x0276	; 0x800276 <butt+0x8>
+ b06:	90 91 77 02 	lds	r25, 0x0277	; 0x800277 <butt+0x9>
+ b0a:	01 97       	sbiw	r24, 0x01	; 1
+ b0c:	71 f4       	brne	.+28     	; 0xb2a <receive+0x1d8>
+    {
+        m^=1;
+ b0e:	80 91 28 02 	lds	r24, 0x0228	; 0x800228 <__data_end>
+ b12:	90 91 29 02 	lds	r25, 0x0229	; 0x800229 <__data_end+0x1>
+ b16:	21 e0       	ldi	r18, 0x01	; 1
+ b18:	82 27       	eor	r24, r18
+ b1a:	90 93 29 02 	sts	0x0229, r25	; 0x800229 <__data_end+0x1>
+ b1e:	80 93 28 02 	sts	0x0228, r24	; 0x800228 <__data_end>
+        //ju1^=1;
+        butt[PS_L3]=0;
+ b22:	10 92 77 02 	sts	0x0277, r1	; 0x800277 <butt+0x9>
+ b26:	10 92 76 02 	sts	0x0276, r1	; 0x800276 <butt+0x8>
+    }
+    if (butt[PS_R3]==1)
+ b2a:	80 91 78 02 	lds	r24, 0x0278	; 0x800278 <butt+0xa>
+ b2e:	90 91 79 02 	lds	r25, 0x0279	; 0x800279 <butt+0xb>
+ b32:	01 97       	sbiw	r24, 0x01	; 1
+ b34:	21 f4       	brne	.+8      	; 0xb3e <receive+0x1ec>
+    {
+        //j2^=0;
+        butt[PS_R3]=0;
+ b36:	10 92 79 02 	sts	0x0279, r1	; 0x800279 <butt+0xb>
+ b3a:	10 92 78 02 	sts	0x0278, r1	; 0x800278 <butt+0xa>
+    }
+}
+ b3e:	08 95       	ret
+
+00000b40 <main>:
+    sei();
+ b40:	78 94       	sei
+    init();
+ b42:	0e 94 a2 00 	call	0x144	; 0x144 <init>
+    serialstart_3();
+ b46:	0e 94 43 04 	call	0x886	; 0x886 <serialstart_3>
+    startPos();
+ b4a:	0e 94 ab 00 	call	0x156	; 0x156 <startPos>
+        if(hop1)
+ b4e:	80 91 48 02 	lds	r24, 0x0248	; 0x800248 <hop1>
+ b52:	90 91 49 02 	lds	r25, 0x0249	; 0x800249 <hop1+0x1>
+ b56:	89 2b       	or	r24, r25
+ b58:	11 f0       	breq	.+4      	; 0xb5e <main+0x1e>
+            hop();
+ b5a:	0e 94 ed 00 	call	0x1da	; 0x1da <hop>
+        if(fow1)
+ b5e:	80 91 46 02 	lds	r24, 0x0246	; 0x800246 <fow1>
+ b62:	90 91 47 02 	lds	r25, 0x0247	; 0x800247 <fow1+0x1>
+ b66:	89 2b       	or	r24, r25
+ b68:	11 f0       	breq	.+4      	; 0xb6e <main+0x2e>
+            foward();
+ b6a:	0e 94 b6 00 	call	0x16c	; 0x16c <foward>
+        if(pronk)
+ b6e:	80 91 3e 02 	lds	r24, 0x023E	; 0x80023e <pronk>
+ b72:	90 91 3f 02 	lds	r25, 0x023F	; 0x80023f <pronk+0x1>
+ b76:	89 2b       	or	r24, r25
+ b78:	11 f0       	breq	.+4      	; 0xb7e <main+0x3e>
+            pronking();
+ b7a:	0e 94 05 01 	call	0x20a	; 0x20a <pronking>
+        if(bg1)
+ b7e:	80 91 3c 02 	lds	r24, 0x023C	; 0x80023c <bg1>
+ b82:	90 91 3d 02 	lds	r25, 0x023D	; 0x80023d <bg1+0x1>
+ b86:	89 2b       	or	r24, r25
+ b88:	11 f0       	breq	.+4      	; 0xb8e <main+0x4e>
+            borseGait1();
+ b8a:	0e 94 1d 01 	call	0x23a	; 0x23a <borseGait1>
+        if (bg2)
+ b8e:	80 91 3a 02 	lds	r24, 0x023A	; 0x80023a <bg2>
+ b92:	90 91 3b 02 	lds	r25, 0x023B	; 0x80023b <bg2+0x1>
+ b96:	89 2b       	or	r24, r25
+ b98:	11 f0       	breq	.+4      	; 0xb9e <main+0x5e>
+            borseGait2();
+ b9a:	0e 94 4e 01 	call	0x29c	; 0x29c <borseGait2>
+        if (nw)
+ b9e:	80 91 38 02 	lds	r24, 0x0238	; 0x800238 <nw>
+ ba2:	90 91 39 02 	lds	r25, 0x0239	; 0x800239 <nw+0x1>
+ ba6:	89 2b       	or	r24, r25
+ ba8:	11 f0       	breq	.+4      	; 0xbae <main+0x6e>
+            nw_gait();
+ baa:	0e 94 7f 01 	call	0x2fe	; 0x2fe <nw_gait>
+        if (ju1)
+ bae:	80 91 36 02 	lds	r24, 0x0236	; 0x800236 <ju1>
+ bb2:	90 91 37 02 	lds	r25, 0x0237	; 0x800237 <ju1+0x1>
+ bb6:	89 2b       	or	r24, r25
+ bb8:	11 f0       	breq	.+4      	; 0xbbe <main+0x7e>
+            jump1();
+ bba:	0e 94 b6 01 	call	0x36c	; 0x36c <jump1>
+        if(sdu)
+ bbe:	80 91 30 02 	lds	r24, 0x0230	; 0x800230 <sdu>
+ bc2:	90 91 31 02 	lds	r25, 0x0231	; 0x800231 <sdu+0x1>
+ bc6:	89 2b       	or	r24, r25
+ bc8:	11 f0       	breq	.+4      	; 0xbce <main+0x8e>
+            sandDuneup();
+ bca:	0e 94 f9 01 	call	0x3f2	; 0x3f2 <sandDuneup>
+        if(opj1)
+ bce:	80 91 2e 02 	lds	r24, 0x022E	; 0x80022e <opj1>
+ bd2:	90 91 2f 02 	lds	r25, 0x022F	; 0x80022f <opj1+0x1>
+ bd6:	89 2b       	or	r24, r25
+ bd8:	11 f0       	breq	.+4      	; 0xbde <main+0x9e>
+            opjump1();
+ bda:	0e 94 2f 02 	call	0x45e	; 0x45e <opjump1>
+        if(sdd)
+ bde:	80 91 2c 02 	lds	r24, 0x022C	; 0x80022c <sdd>
+ be2:	90 91 2d 02 	lds	r25, 0x022D	; 0x80022d <sdd+0x1>
+ be6:	89 2b       	or	r24, r25
+ be8:	11 f0       	breq	.+4      	; 0xbee <main+0xae>
+            sandDunedown();
+ bea:	0e 94 81 02 	call	0x502	; 0x502 <sandDunedown>
+        if (m)
+ bee:	80 91 28 02 	lds	r24, 0x0228	; 0x800228 <__data_end>
+ bf2:	90 91 29 02 	lds	r25, 0x0229	; 0x800229 <__data_end+0x1>
+ bf6:	89 2b       	or	r24, r25
+ bf8:	11 f0       	breq	.+4      	; 0xbfe <main+0xbe>
+            mountain();
+ bfa:	0e 94 f7 03 	call	0x7ee	; 0x7ee <mountain>
+        receive();
+ bfe:	0e 94 a9 04 	call	0x952	; 0x952 <receive>
+        if(hop1)
+ c02:	a5 cf       	rjmp	.-182    	; 0xb4e <main+0xe>
+
+00000c04 <_exit>:
+ c04:	f8 94       	cli
+
+00000c06 <__stop_program>:
+ c06:	ff cf       	rjmp	.-2      	; 0xc06 <__stop_program>
