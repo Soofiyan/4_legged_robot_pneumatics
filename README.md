@@ -20,7 +20,7 @@ Fifth prize winner at National Level Robocon Robotics Competition 2018-19 conduc
 ## Flowchart for touch down analysis
 ![](https://github.com/Soofiyan/4_legged_robot_pneumatics/blob/master/images/4_legged_pneumatic1.png)
 
-## Flowchart for touch down analysis
+## Flowchart for flight analysis
 ![](https://github.com/Soofiyan/4_legged_robot_pneumatics/blob/master/images/4_legged_pneumatic2.png)
 
 ## Bot
