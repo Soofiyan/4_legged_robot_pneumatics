@@ -24,5 +24,5 @@ Fifth prize winner at National Level Robocon Robotics Competition 2018-19 conduc
 ![](https://github.com/Soofiyan/4_legged_robot_pneumatics/blob/master/images/4_legged_pneumatic2.png)
 
 ## Bot
-![](https://github.com/Soofiyan/e-Yantra-Competition/blob/master/images/image1.png)
+![](https://github.com/Soofiyan/4_legged_robot_pneumatics/blob/master/images/image1.png)
 
