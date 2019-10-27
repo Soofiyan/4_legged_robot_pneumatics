@@ -7,7 +7,7 @@ This repository is the documentation of 4 legged robot using pneumatics along wi
 ## Video Demonstration
 [Bot Video Demonstration](https://www.youtube.com/watch?v=049U0JCLvGc)   
 
-Team ID: **eYRC-NS#963** | 
+Team Name: **Team KJSCE Robocon** | 
 Fifth prize winner at National Level Robocon Robotics Competition 2018-19 conducted by IIT Delhi. Also won a springer award of 200 euros
 
 ## Repository Contents
